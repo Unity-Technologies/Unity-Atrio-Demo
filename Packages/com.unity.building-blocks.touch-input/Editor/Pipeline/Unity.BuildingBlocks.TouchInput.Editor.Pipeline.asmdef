@@ -1,0 +1,38 @@
+{
+    "name": "Unity.BuildingBlocks.TouchInput.Editor.Pipeline",
+    "rootNamespace": "Unity.BuildingBlocks.TouchInput.Editor",
+    "references": [
+        "Unity.BuildingBlocks.TouchInput.Core",
+        "Unity.BuildingBlocks.TouchInput.UGUI",
+        "Unity.BuildingBlocks.TouchInput.InputSystem",
+        "Unity.BuildingBlocks.TouchInput.Editor",
+        "Unity.Pipeline",
+        "Unity.Pipeline.Attributes",
+        "UnityEngine.UI",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "BB_TOUCH_HAS_PIPELINE"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.pipeline",
+            "expression": "0.7.0-exp.1",
+            "define": "BB_TOUCH_HAS_PIPELINE"
+        },
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "1.0.0",
+            "define": "BB_TOUCH_HAS_INPUTSYSTEM"
+        }
+    ],
+    "noEngineReferences": false
+}

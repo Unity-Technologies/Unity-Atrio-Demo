@@ -1,0 +1,26 @@
+{
+    "name": "Unity.BuildingBlocks.Gameplay.UGUI",
+    "rootNamespace": "Unity.BuildingBlocks.Gameplay",
+    "references": [
+        "Unity.BuildingBlocks.Gameplay.Core",
+        "Unity.BuildingBlocks.Gameplay.Interactions",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "BUILDING_BLOCKS_UGUI"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.ugui",
+            "expression": "1.0.0",
+            "define": "BUILDING_BLOCKS_UGUI"
+        }
+    ],
+    "noEngineReferences": false
+}

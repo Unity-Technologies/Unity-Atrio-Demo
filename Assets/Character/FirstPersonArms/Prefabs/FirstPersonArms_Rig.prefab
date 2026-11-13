@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6367966322207239472
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_Name
+      value: FirstPersonArms_Rig
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063216815101234170, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063216815101234170, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063216815101234170, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063216815101234170, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 128
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3566961739300161485}
+  m_SourcePrefab: {fileID: 100100000, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+--- !u!1 &6097564316177600609 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b11878720295d14eab85d2012dfcca5, type: 3}
+  m_PrefabInstance: {fileID: 6367966322207239472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3566961739300161485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6097564316177600609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a545894314354b7493062d28859a2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FirstPersonArmsWallPullback
+  m_CameraRig: {fileID: 0}
+  m_WallLayers:
+    serializedVersion: 2
+    m_Bits: 4294967035
+  m_Reach: 0.6
+  m_ProbeRadius: 0.12
+  m_ChestDrop: 0.45
+  m_MaxPullBack: 0.35
+  m_MaxDrop: 0.1
+  m_Smoothing: 0.08

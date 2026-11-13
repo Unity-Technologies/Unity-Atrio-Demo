@@ -1,0 +1,23 @@
+{
+  "name": "com.unity.building-blocks.touch-input",
+  "displayName": "Building Blocks Touch Input",
+  "version": "0.2.1",
+  "unity": "6000.3",
+  "description": "Mobile touch input building blocks: composable on-screen controls (joysticks and buttons) built on a UI-agnostic core, a uGUI presentation layer, an optional Input System device (<TouchRig>) with rig-side action mappings and editor authoring tools, runtime tuning, rebinding and mapping that can be saved, per-platform Show on, and optional Pipeline CLI commands. Early preview.",
+  "author": {
+    "name": "Unity Technologies"
+  },
+  "keywords": [
+    "building-blocks",
+    "touch",
+    "mobile",
+    "input",
+    "joystick",
+    "input-system"
+  ],
+  "dependencies": {
+    "com.unity.modules.ui": "1.0.0",
+    "com.unity.ugui": "2.0.0"
+  },
+  "_fingerprint": "152f15d34ea71a22bf8f2d881673aa67373c8c9a"
+}

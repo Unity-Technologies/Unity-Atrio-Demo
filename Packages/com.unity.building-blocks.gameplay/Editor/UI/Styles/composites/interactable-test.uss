@@ -1,0 +1,38 @@
+/* Interactable Test card: one row. Title, the line saying what it does (or, in Play mode, what the
+   interactable is doing), and Play, which becomes Stop while it runs. Same
+   card as the Trigger Volume inspector's, with nothing to open. */
+
+.blocks-test .blocks-panel__summary {
+    display: none;
+}
+
+/* A long Play-mode line ("Armed · press E or Gamepad West button…") shortens with an ellipsis;
+   the button never gives way. */
+.blocks-test .blocks-panel__gloss {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+}
+
+.blocks-test .blocks-panel__actions {
+    flex-shrink: 0;
+}
+
+.blocks-test--live .blocks-panel__gloss {
+    color: var(--color-live-text);
+}
+
+.blocks-test--warn .blocks-panel__gloss {
+    color: var(--color-warning-text);
+}
+
+.blocks-test--live {
+    border-color: var(--color-live-background);
+}
+
+.blocks-test .blocks-test__button {
+    width: 64px;
+    height: 21px;
+    margin-left: 6px;
+}

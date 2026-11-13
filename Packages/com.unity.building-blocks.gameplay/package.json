@@ -1,0 +1,24 @@
+{
+  "name": "com.unity.building-blocks.gameplay",
+  "displayName": "Building Blocks Gameplay",
+  "version": "0.4.5",
+  "unity": "6000.3",
+  "description": "Gameplay framework building blocks: a kinematic character-movement core (KinematicMover) that separates simulation from visuals and is networking-ready by design, an ability-based Character layer, and an interaction system. Early preview.",
+  "author": {
+    "name": "Unity Technologies"
+  },
+  "keywords": [
+    "building-blocks",
+    "gameplay",
+    "character",
+    "movement",
+    "kinematic"
+  ],
+  "dependencies": {
+    "com.unity.modules.physics": "1.0.0",
+    "com.unity.inputsystem": "1.11.2",
+    "com.unity.modules.animation": "1.0.0",
+    "com.unity.modules.director": "1.0.0"
+  },
+  "_fingerprint": "36b55d6fd749d22ec0269be0decca1579aa307d6"
+}

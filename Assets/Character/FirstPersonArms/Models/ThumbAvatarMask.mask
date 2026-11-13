@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ThumbAvatarMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000u
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: FirstPersonArms_Rig
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/geo
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/geo/char_arms_geo
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_index1_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_index1_jnt/left_finger_index2_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_index1_jnt/left_finger_index2_jnt/left_finger_index3_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_middle1_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_middle1_jnt/left_finger_middle2_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_middle1_jnt/left_finger_middle2_jnt/left_finger_middle3_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_pinky1_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_pinky1_jnt/left_finger_pinky2_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_pinky1_jnt/left_finger_pinky2_jnt/left_finger_pinky3_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_ring1_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_ring1_jnt/left_finger_ring2_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_ring1_jnt/left_finger_ring2_jnt/left_finger_ring3_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_thumb1_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_thumb1_jnt/left_finger_thumb2_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_jnt/left_finger_thumb1_jnt/left_finger_thumb2_jnt/left_finger_thumb3_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_index1_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_index1_jnt/right_finger_index2_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_index1_jnt/right_finger_index2_jnt/right_finger_index3_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_middle1_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_middle1_jnt/right_finger_middle2_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_middle1_jnt/right_finger_middle2_jnt/right_finger_middle3_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_pinky1_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_pinky1_jnt/right_finger_pinky2_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_pinky1_jnt/right_finger_pinky2_jnt/right_finger_pinky3_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_ring1_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_ring1_jnt/right_finger_ring2_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_ring1_jnt/right_finger_ring2_jnt/right_finger_ring3_jnt
+    m_Weight: 0
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_thumb1_jnt
+    m_Weight: 1
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_thumb1_jnt/right_finger_thumb2_jnt
+    m_Weight: 1
+  - m_Path: FirstPersonArms_Rig/root/torso_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_jnt/right_finger_thumb1_jnt/right_finger_thumb2_jnt/right_finger_thumb3_jnt
+    m_Weight: 1

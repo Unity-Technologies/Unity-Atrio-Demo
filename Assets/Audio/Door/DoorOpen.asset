@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-6343285373242613830
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DoorOpenCreak_3_{-6343285373242613830}
+  m_AudioClip: {fileID: 8300000, guid: bba6c15204fa31e4b8c1d9f916647b34, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-5144716563799127967
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DoorOpenCreak_10_{-5144716563799127967}
+  m_AudioClip: {fileID: 8300000, guid: 5c2d3d6411329c6449d4ba871febac9c, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-4525815283082093445
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DoorOpenCreak_7_{-4525815283082093445}
+  m_AudioClip: {fileID: 8300000, guid: fc0bb80c5e5df114dbad4bc649c9950d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3773154984767646000
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DoorOpenCreak_1_{-3773154984767646000}
+  m_AudioClip: {fileID: 8300000, guid: f6c40c196c4853d4a8c2b280c5f14d3b, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-2728059110947393539
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DoorOpenCreak_5_{-2728059110947393539}
+  m_AudioClip: {fileID: 8300000, guid: cd9a561213509034e91aaad4b460ca81, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-640770720794864599
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DoorOpenCreak_2_{-640770720794864599}
+  m_AudioClip: {fileID: 8300000, guid: 36dd30af1eefb7a44ab07ad4a654f734, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &1401006440899926671
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DoorOpenCreak_6_{1401006440899926671}
+  m_AudioClip: {fileID: 8300000, guid: 243d2b4bb78f3544ab0ad83885cdedf0, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4360658988012843521
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DoorOpenCreak_9_{4360658988012843521}
+  m_AudioClip: {fileID: 8300000, guid: 78dff89d429d60d4fb2146839b52b0c2, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DoorOpen
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: -3773154984767646000}
+  - {fileID: -640770720794864599}
+  - {fileID: -6343285373242613830}
+  - {fileID: 8031674446865627429}
+  - {fileID: -2728059110947393539}
+  - {fileID: 1401006440899926671}
+  - {fileID: -4525815283082093445}
+  - {fileID: 8057942056954832073}
+  - {fileID: 4360658988012843521}
+  - {fileID: -5144716563799127967}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 1
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &8031674446865627429
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DoorOpenCreak_4_{8031674446865627429}
+  m_AudioClip: {fileID: 8300000, guid: 1335b4dbfc9bb984287031d698b32b70, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &8057942056954832073
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DoorOpenCreak_8_{8057942056954832073}
+  m_AudioClip: {fileID: 8300000, guid: 6d7d86c0a43d47544badb4187f9387c8, type: 3}
+  m_Volume: 0
+  m_Enabled: 1

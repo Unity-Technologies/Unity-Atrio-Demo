@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-8771963144117792962
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DogBark_03_E_{-8771963144117792962}
+  m_AudioClip: {fileID: 8300000, guid: 18e51404e6157de4e9ddbe9cb5d3d661, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3561730194725152686
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DogBark_02_A_{-3561730194725152686}
+  m_AudioClip: {fileID: 8300000, guid: 8e398010d3c46b74794cdf26f0c2cd89, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1545436916512170804
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DogBark_03_B_{-1545436916512170804}
+  m_AudioClip: {fileID: 8300000, guid: f0a7f3ed02479084f87c7ec45d0076f6, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &811684666397174693
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DogBark_02_D_{811684666397174693}
+  m_AudioClip: {fileID: 8300000, guid: 1956015ff7dedc249aa2fc42aa67d1d7, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &1776192385121315334
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DogBark_03_D_{1776192385121315334}
+  m_AudioClip: {fileID: 8300000, guid: bad3af0baeac5e54c88f2f0858923dea, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &3475250813484837975
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DogBark_03_A_{3475250813484837975}
+  m_AudioClip: {fileID: 8300000, guid: fc83f31c44c888c4aa6cd63b28359d5f, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4569843394404360072
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DogBark_03_C_{4569843394404360072}
+  m_AudioClip: {fileID: 8300000, guid: 5d338fc0b6a18e84194bf2bc874e16cc, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4676501467745971757
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DogBark_02_C_{4676501467745971757}
+  m_AudioClip: {fileID: 8300000, guid: 2e87894d64d300242aa18fb44ca935cc, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5137820995160016814
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DogBark_02_B_{5137820995160016814}
+  m_AudioClip: {fileID: 8300000, guid: 230623c29721b81448be9a58b1b2fc1f, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DogBark
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: -3561730194725152686}
+  - {fileID: 5137820995160016814}
+  - {fileID: 4676501467745971757}
+  - {fileID: 811684666397174693}
+  - {fileID: 3475250813484837975}
+  - {fileID: -1545436916512170804}
+  - {fileID: 4569843394404360072}
+  - {fileID: 1776192385121315334}
+  - {fileID: -8771963144117792962}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 2
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 0
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0

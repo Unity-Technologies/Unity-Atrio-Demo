@@ -1,0 +1,433 @@
+/* Copied from the gameplay package's Editor/UI/Styles/composites/step-list.uss. The Mappings card draws in this language. */
+/* Step list: an ordered list of sibling components drawn as a vertical timeline. A rail runs
+   down the left with a numbered node per row; drag a row to reorder it, hover for remove. In
+   Play mode the nodes fill in as the run passes them. */
+.blocks-steps__rows {
+    margin-top: 2px;
+}
+
+.blocks-steps__empty {
+    color: var(--color-warning-text);
+    font-size: 11px;
+    white-space: normal;
+    margin: 4px 0 6px 30px;
+}
+
+.blocks-step {
+    flex-direction: row;
+    align-items: center;
+    min-height: 38px;
+    padding: 3px 4px 3px 0;
+    margin-bottom: 1px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    transition-property: background-color, border-color, translate, opacity, scale, top, max-height;
+    transition-duration: 140ms, 140ms, 180ms, 160ms, 140ms, 160ms, 160ms;
+    transition-timing-function: ease-out-cubic;
+}
+
+.blocks-step:hover {
+    background-color: var(--color-surface-subtle);
+}
+
+/* A row with no summary line (processors) does not need the two-line height. */
+.blocks-step--compact {
+    min-height: 30px;
+}
+
+.blocks-step--dragging {
+    background-color: var(--color-surface-raised);
+    border-color: var(--color-accent-border);
+    scale: 1.01;
+    transition-duration: 0ms, 140ms, 0ms, 160ms, 140ms, 0ms, 160ms;
+}
+
+.blocks-step--enter {
+    opacity: 0;
+    translate: 0 -10px;
+}
+
+.blocks-step--leave {
+    opacity: 0;
+    translate: 18px 0;
+}
+
+.blocks-step--pending .blocks-step__text,
+.blocks-step--pending .blocks-step__glyph {
+    opacity: 0.55;
+}
+
+/* Rail + node ------------------------------------------------------------------------------ */
+.blocks-step__rail {
+    width: 30px;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.blocks-step__line {
+    position: absolute;
+    left: 14px;
+    width: 2px;
+    background-color: var(--color-rail);
+    transition-property: background-color;
+    transition-duration: 220ms;
+}
+
+/* Each half stops 9px short of the row's center, mid-ring on the 20px node, so nothing is
+   drawn behind the circle: the done state's translucent tint and muted rows' opacity would
+   otherwise show the rail straight through the number. */
+.blocks-step__line--top    { top: 0;   bottom: 50%; margin-bottom: 9px; }
+.blocks-step__line--bottom { top: 50%; bottom: 0;   margin-top: 9px; }
+
+.blocks-step--first .blocks-step__line--top    { display: none; }
+.blocks-step--last  .blocks-step__line--bottom { display: none; }
+
+.blocks-step--done .blocks-step__line,
+.blocks-step--running .blocks-step__line--top {
+    background-color: var(--color-live);
+}
+
+.blocks-step__node {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: var(--color-rail);
+    background-color: var(--color-card-background);
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color, border-color, scale;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out-cubic;
+}
+
+.blocks-step:hover .blocks-step__node {
+    border-color: var(--color-border-subtle-strong);
+}
+
+.blocks-step--dragging .blocks-step__node {
+    border-color: var(--color-accent);
+}
+
+.blocks-step__node-label {
+    flex-grow: 1;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 9px;
+    -unity-font-style: bold;
+    color: var(--color-foreground-muted);
+    -unity-text-align: middle-center;
+}
+
+.blocks-step__node-icon {
+    width: 12px;
+    height: 12px;
+    display: none;
+}
+
+.blocks-step--running .blocks-step__node {
+    background-color: var(--color-live);
+    border-color: var(--color-live);
+    scale: 1.15;
+}
+
+.blocks-step--running .blocks-step__node-label { display: none; }
+.blocks-step--running .blocks-step__node-icon  { display: flex; }
+
+.blocks-step--done .blocks-step__node {
+    border-color: var(--color-live);
+    background-color: var(--color-live-background);
+}
+
+.blocks-step--done .blocks-step__node-label {
+    color: var(--color-live-text);
+}
+
+.blocks-step--muted .blocks-step__node {
+    opacity: 0.4;
+}
+
+/* Glyph + text ----------------------------------------------------------------------------- */
+.blocks-step__glyph {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    opacity: 0.9;
+    transition-property: opacity;
+    transition-duration: 160ms;
+}
+
+.blocks-step__text {
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    transition-property: opacity;
+    transition-duration: 160ms;
+}
+
+.blocks-step__name {
+    font-size: 12px;
+    color: var(--color-foreground);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blocks-step__summary {
+    font-size: 11px;
+    color: var(--color-foreground-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 1px;
+}
+
+.blocks-step__summary--warn {
+    color: var(--color-warning-text);
+}
+
+.blocks-step--muted .blocks-step__text  { opacity: 0.45; }
+.blocks-step--muted .blocks-step__glyph { opacity: 0.3; }
+
+/* Row controls ---------------------------------------------------------------------------- */
+.blocks-step__enable {
+    margin: 0 2px 0 6px;
+    flex-shrink: 0;
+}
+
+.blocks-step__remove {
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    margin: 0 0 0 2px;
+    font-size: 11px;
+    opacity: 0;
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color-foreground-dim);
+    transition-property: opacity, background-color, color;
+    transition-duration: 120ms;
+}
+
+.blocks-step:hover .blocks-step__remove {
+    opacity: 1;
+}
+
+.blocks-step__remove:hover {
+    background-color: var(--color-danger-background);
+    color: var(--color-danger-text);
+}
+
+.blocks-grip {
+    width: 8px;
+    height: 14px;
+    margin: 0 4px 0 4px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    opacity: 0;
+    flex-shrink: 0;
+    transition-property: opacity;
+    transition-duration: 120ms;
+}
+
+.blocks-step:hover .blocks-grip,
+.blocks-step--dragging .blocks-grip {
+    opacity: 0.7;
+}
+
+/* Three rows of two dots: 2px dot + 4px gap = rows at 0, 6 and 12 of the 14px grip. USS has no
+   align-content: space-between, so the gap is a margin on the dot. */
+.blocks-grip__dot {
+    width: 2px;
+    height: 2px;
+    margin-bottom: 4px;
+    border-radius: 1px;
+    background-color: var(--color-foreground-muted);
+}
+
+/* Progress along the bottom of the running row --------------------------------------------- */
+.blocks-step__track {
+    position: absolute;
+    left: 30px;
+    right: 8px;
+    bottom: 0;
+    height: 2px;
+    display: none;
+}
+
+.blocks-step--running .blocks-step__track {
+    display: flex;
+}
+
+.blocks-step__progress {
+    height: 2px;
+    width: 0;
+    background-color: var(--color-live);
+    transition-property: width;
+    transition-duration: 100ms;
+    transition-timing-function: linear;
+}
+
+/* Add row + palette ------------------------------------------------------------------------ */
+.blocks-step-add {
+    flex-direction: row;
+    align-items: center;
+    min-height: 32px;
+    padding: 2px 6px 2px 0;
+    border-radius: 8px;
+    transition-property: background-color;
+    transition-duration: 140ms;
+}
+
+.blocks-step-add:hover {
+    background-color: var(--color-surface-subtle);
+}
+
+.blocks-step-add__rail {
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.blocks-step-add__node {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: var(--color-rail);
+    align-items: center;
+    justify-content: center;
+    transition-property: border-color, background-color, rotate;
+    transition-duration: 160ms;
+    transition-timing-function: ease-out-cubic;
+}
+
+/* The plus is two bars placed by arithmetic inside the 16px padding box (20px node, 2px border),
+   so it is centered by construction and turns cleanly about the node's center. */
+.blocks-step-add__bar {
+    position: absolute;
+    border-radius: 1px;
+    background-color: var(--color-foreground-dim);
+    transition-property: background-color;
+    transition-duration: 160ms;
+}
+
+.blocks-step-add__bar--h {
+    width: 8px;
+    height: 2px;
+    left: 4px;
+    top: 7px;
+}
+
+.blocks-step-add__bar--v {
+    width: 2px;
+    height: 8px;
+    left: 7px;
+    top: 4px;
+}
+
+.blocks-step-add:hover .blocks-step-add__node,
+.blocks-step-add--open .blocks-step-add__node {
+    border-color: var(--color-accent);
+    background-color: var(--color-accent-background-soft);
+}
+
+.blocks-step-add--open .blocks-step-add__node {
+    rotate: 45deg;
+}
+
+.blocks-step-add:hover .blocks-step-add__bar,
+.blocks-step-add--open .blocks-step-add__bar {
+    background-color: var(--color-accent-text);
+}
+
+.blocks-step-add__label {
+    font-size: 12px;
+    color: var(--color-foreground-muted);
+    margin-left: 8px;
+    transition-property: color;
+    transition-duration: 140ms;
+}
+
+.blocks-step-add:hover .blocks-step-add__label,
+.blocks-step-add--open .blocks-step-add__label {
+    color: var(--color-foreground);
+}
+
+.blocks-palette {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4px 0 2px 30px;
+}
+
+.blocks-chip {
+    width: 48%;
+    min-width: 140px;
+    margin: 0 2% 4px 0;
+    padding: 7px 10px 8px 10px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: var(--color-border-subtle);
+    background-color: var(--color-surface-subtle);
+    transition-property: background-color, border-color, translate, opacity;
+    transition-duration: 120ms, 120ms, 220ms, 220ms;
+    transition-timing-function: ease-out-cubic;
+}
+
+.blocks-chip:hover {
+    background-color: var(--color-accent-background-soft);
+    border-color: var(--color-accent-border);
+}
+
+.blocks-chip:active {
+    background-color: var(--color-accent-background);
+}
+
+.blocks-chip--enter {
+    opacity: 0;
+    translate: 0 8px;
+}
+
+.blocks-chip--disabled {
+    opacity: 0.4;
+}
+
+.blocks-chip__title {
+    font-size: 12px;
+    color: var(--color-foreground);
+}
+
+.blocks-chip__desc {
+    font-size: 10px;
+    color: var(--color-foreground-muted);
+    white-space: normal;
+    margin-top: 2px;
+}
+
+.blocks-palette__none {
+    color: var(--color-foreground-dim);
+    font-size: 11px;
+    margin-left: 30px;
+}
+
+/* A step that starts together with the one above it: accent node, accent rail up to its partner. */
+.blocks-step--joined .blocks-step__node {
+    border-color: var(--color-accent-border);
+    background-color: var(--color-accent-background-soft);
+}
+
+.blocks-step--joined .blocks-step__node-label {
+    color: var(--color-accent-text);
+}
+
+.blocks-step--joined .blocks-step__line--top {
+    background-color: var(--color-accent-border);
+}

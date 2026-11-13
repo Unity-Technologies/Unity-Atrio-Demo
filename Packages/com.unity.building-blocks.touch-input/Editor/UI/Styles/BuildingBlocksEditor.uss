@@ -1,0 +1,18 @@
+/*
+ * Every Touch Input editor surface imports this one sheet. The imported files are copies of the gameplay
+ * package's; touch-input.uss holds this package's own composites.
+ * core.uss defines the dark colour tokens and core-light.uss redefines them for the light skin;
+ * BuildingBlocksStyles layers the light sheet on top only when the editor is in light mode.
+ */
+@import url("core.uss");
+@import url("buttons.uss");
+@import url("utilities.uss");
+@import url("composites/prompt-card.uss");
+@import url("inspector-card.uss");
+@import url("composites/check-row.uss");
+@import url("composites/segmented.uss");
+@import url("composites/step-list.uss");
+@import url("composites/step-groups.uss");
+@import url("touch-input.uss");
+
+VisualElement {}

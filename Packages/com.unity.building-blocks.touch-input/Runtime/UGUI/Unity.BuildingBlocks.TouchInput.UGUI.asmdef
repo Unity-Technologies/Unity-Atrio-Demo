@@ -1,0 +1,17 @@
+{
+    "name": "Unity.BuildingBlocks.TouchInput.UGUI",
+    "rootNamespace": "Unity.BuildingBlocks.TouchInput",
+    "references": [
+        "Unity.BuildingBlocks.TouchInput.Core",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

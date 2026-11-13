@@ -1,0 +1,64 @@
+.blocks-check {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 7px 8px;
+    border-radius: 6px;
+    margin-bottom: 3px;
+    background-color: var(--color-surface-subtle);
+}
+
+.blocks-check--warning {
+    background-color: var(--color-warning-background);
+}
+
+.blocks-check--error {
+    background-color: var(--color-danger-background);
+}
+
+.blocks-check__icon {
+    width: 16px;
+    min-width: 16px;
+    -unity-text-align: upper-center;
+    -unity-font-style: bold;
+    font-size: 11px;
+    margin-right: 6px;
+    color: var(--color-success-text);
+}
+
+.blocks-check--warning .blocks-check__icon { color: var(--color-warning-text); }
+.blocks-check--error   .blocks-check__icon { color: var(--color-danger-text); }
+
+.blocks-check__body {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.blocks-check__title {
+    color: var(--color-foreground);
+    font-size: 12px;
+    -unity-font-style: bold;
+    white-space: normal;
+}
+
+.blocks-check--ok .blocks-check__title {
+    -unity-font-style: normal;
+    color: var(--color-foreground-secondary);
+}
+
+.blocks-check__detail {
+    color: var(--color-foreground-dim);
+    font-size: 11px;
+    white-space: normal;
+    margin-top: 2px;
+}
+
+/* An Ok check needs no explanation taking up room; the title carries it. */
+.blocks-check--ok .blocks-check__detail {
+    display: none;
+}
+
+.blocks-check__fix {
+    min-width: 90px;
+    margin-left: 8px;
+    margin-top: 0;
+}

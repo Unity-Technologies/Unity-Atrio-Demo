@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8190040351200490039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3307901269053645704}
+  - component: {fileID: 382215623883491823}
+  m_Layer: 5
+  m_Name: Interaction_UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3307901269053645704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8190040351200490039}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.015, y: 0.015, z: 0.015}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &382215623883491823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8190040351200490039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc590789c67641d5a46d8c0bcf42d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.BuildingBlocks.Gameplay.Interactions::Unity.BuildingBlocks.Gameplay.InputPrompt
+  m_Zone: {fileID: 0}
+  m_Button:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Interact
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: da5cf52d-0125-479c-8264-da90c19c1ba6
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 1b9c1e2d-90fc-46e5-897c-d8d4fe5693f1
+        m_Path: <Keyboard>/e
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Interact
+        m_Flags: 0
+      - m_Name: 
+        m_Id: 00fb6707-11ae-4297-869e-576be4e5c3e2
+        m_Path: <Gamepad>/buttonWest
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Interact
+        m_Flags: 0
+      m_Flags: 0
+      m_Priority: 0
+    m_Reference: {fileID: 0}
+  m_Label: Interact
+  m_Anchor: {fileID: 3307901269053645704}
+  m_ShowWhileEnabled: {fileID: 0}
+  m_ShowHint: 1
+  m_HintDistance: 6
+  m_Style: {fileID: 11400000, guid: 451605aceaf42c146bcd25b6a0ab7d03, type: 2}
+  m_ViewPrefab: {fileID: 0}
+  m_Preview: 0
+  m_OnPressed:
+    m_PersistentCalls:
+      m_Calls: []

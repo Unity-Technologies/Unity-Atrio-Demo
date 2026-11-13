@@ -1,0 +1,64 @@
+/* Copied from the gameplay package's Editor/UI/Styles/core.uss. */
+:root {
+    --color-window-background: rgb(30, 30, 30);
+    --color-topbar-background: rgb(38, 38, 38);
+    --color-nested-background: rgb(42, 42, 42);
+    --color-card-background:   rgb(46, 46, 48);
+    --color-well-background:   rgba(0, 0, 0, 0.25);
+    --color-deep-background:   rgb(20, 20, 20);
+    --color-surface-raised:    rgb(60, 60, 66);
+
+    --color-border:        rgba(0, 0, 0, 0.45);
+    --color-divider:       rgba(255, 255, 255, 0.07);
+    --color-rail:          rgba(255, 255, 255, 0.14);
+
+    --color-foreground:           rgb(240, 240, 240);
+    --color-foreground-strong:    rgb(245, 245, 245);
+    --color-foreground-secondary: rgba(210, 210, 210, 0.85);
+    --color-foreground-muted:     rgba(180, 180, 180, 0.85);
+    --color-foreground-dim:       rgba(170, 170, 170, 0.65);
+
+
+    --color-surface:              var(--unity-colors-button-background, rgba(255, 255, 255, 0.08));
+    --color-surface-subtle:       rgba(255, 255, 255, 0.05);
+    --color-surface-hover:        var(--unity-colors-button-background-hover, rgba(255, 255, 255, 0.13));
+    --color-border-subtle:        rgba(255, 255, 255, 0.10);
+    --color-border-subtle-strong: rgba(255, 255, 255, 0.18);
+    --color-border-strong:        var(--unity-colors-default-border, rgba(0, 0, 0, 0.55));
+    --color-inset:                var(--unity-colors-object_field-background, rgba(0, 0, 0, 0.22));
+    --color-inset-strong:         rgba(0, 0, 0, 0.30);
+    --color-transparent:          rgba(0, 0, 0, 0);
+
+    /* Accent: a clear blue. One hue for everything the package draws that is "ours". */
+    --color-accent:                  rgb(72, 140, 255);
+    --color-accent-bright:           rgb(96, 158, 255);
+    --color-accent-text:             rgb(150, 196, 255);
+    --color-accent-on:               rgb(255, 255, 255);
+    --color-accent-background-soft:  rgba(72, 140, 255, 0.12);
+    --color-accent-background:       rgba(72, 140, 255, 0.20);
+    --color-accent-background-hover: rgba(96, 158, 255, 0.30);
+    --color-accent-border:           rgba(72, 140, 255, 0.45);
+    --color-accent-border-strong:    rgb(96, 158, 255);
+
+    /* Live: anything that is happening right now in Play mode — a running step, an armed interactable. */
+    --color-live:            rgb(72, 199, 142);
+    --color-live-text:       rgb(146, 226, 186);
+    --color-live-background: rgba(72, 199, 142, 0.16);
+
+    --color-warning:            rgb(224, 164, 78);
+    --color-warning-text:       rgb(240, 210, 163);
+    --color-warning-background: rgba(224, 164, 78, 0.08);
+    --color-warning-border:     rgba(224, 164, 78, 0.35);
+
+    --color-danger:            rgb(226, 98, 90);
+    --color-danger-text:       rgb(240, 166, 158);
+    --color-danger-background: rgba(226, 98, 90, 0.10);
+    --color-danger-border:     rgba(226, 98, 90, 0.38);
+
+    --color-success:      rgb(72, 199, 142);
+    --color-success-text: rgb(146, 226, 186);
+
+    --color-hover:            rgb(96, 158, 255);
+    --color-hover-border:     rgb(96, 158, 255);
+    --color-hover-background: rgb(46, 56, 74);
+}

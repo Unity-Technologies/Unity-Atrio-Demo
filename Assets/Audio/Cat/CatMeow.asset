@@ -1,0 +1,192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-6138726418067591654
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_18_{-6138726418067591654}
+  m_AudioClip: {fileID: 8300000, guid: a066b354d3aeb474786e1df32d3d53e7, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-5780614258818925952
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_7_{-5780614258818925952}
+  m_AudioClip: {fileID: 8300000, guid: b4e2f03fe44c2294385be73794ed9371, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-4723508206522919685
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_12_{-4723508206522919685}
+  m_AudioClip: {fileID: 8300000, guid: 549e4c3b7f6d46f4a9e1b78d20686579, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3177829038217957505
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_4_{-3177829038217957505}
+  m_AudioClip: {fileID: 8300000, guid: c6fc928dcee2aca40bf455ee7857d0d6, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &640686311381207603
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_10_{640686311381207603}
+  m_AudioClip: {fileID: 8300000, guid: 16604f24cddb17849ba298282f955a25, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &875006124975973000
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_22_{875006124975973000}
+  m_AudioClip: {fileID: 8300000, guid: 46ab2ab271e4f794dbbe7e7ef42a3bda, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2018328108676937048
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_11_{2018328108676937048}
+  m_AudioClip: {fileID: 8300000, guid: e991faec3a49cc148b869ac34d50fd9b, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2310080672544356744
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_5_{2310080672544356744}
+  m_AudioClip: {fileID: 8300000, guid: 17e06cf998998264bb57b923c6f7aded, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2645135225177204192
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_17_{2645135225177204192}
+  m_AudioClip: {fileID: 8300000, guid: df3c32e10f0dd704c8d625d5f7001489, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2808024856445672429
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_1_{2808024856445672429}
+  m_AudioClip: {fileID: 8300000, guid: 55b399bd99f8cf74eba037f2635365f5, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4998144915575428555
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_3_{4998144915575428555}
+  m_AudioClip: {fileID: 8300000, guid: 3ac1d3eaa15d67d4abe2d527d5262fe4, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5975456371758897345
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_8_{5975456371758897345}
+  m_AudioClip: {fileID: 8300000, guid: 59cb8a5f2770815488e1df0c3004ede4, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &6254339356933197529
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_13_{6254339356933197529}
+  m_AudioClip: {fileID: 8300000, guid: e1482c03aa50cd0458cc7f5c5c189776, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: -173.64343, y: 241.86041}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 2808024856445672429}
+  - {fileID: 4998144915575428555}
+  - {fileID: -3177829038217957505}
+  - {fileID: 2310080672544356744}
+  - {fileID: -5780614258818925952}
+  - {fileID: 5975456371758897345}
+  - {fileID: 6985724842524701038}
+  - {fileID: 640686311381207603}
+  - {fileID: 2018328108676937048}
+  - {fileID: -4723508206522919685}
+  - {fileID: 6254339356933197529}
+  - {fileID: 8728225226069495334}
+  - {fileID: 2645135225177204192}
+  - {fileID: -6138726418067591654}
+  - {fileID: 875006124975973000}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 1
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 1
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &6985724842524701038
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_9_{6985724842524701038}
+  m_AudioClip: {fileID: 8300000, guid: 570fe53b136939341a16bdc783ce03c7, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &8728225226069495334
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CatMeow_15_{8728225226069495334}
+  m_AudioClip: {fileID: 8300000, guid: 3c39fba6a357fa64492d4696bbe78721, type: 3}
+  m_Volume: 0
+  m_Enabled: 1

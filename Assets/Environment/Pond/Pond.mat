@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Pond
+  m_Shader: {fileID: 4800000, guid: 45807e0bbcbbc6540bd062efbbc8aa3a, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: _DeepColor
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FlowMap:
+        m_Texture: {fileID: 2800000, guid: f95a58a01f74b51438244e0aaa4247d2, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _DepthSensitivity: 0.62
+    - _FlowStrength: 0.26
+    - _FlowTiling: 2.5
+    - _FoamDistance: 0.27
+    - _FoamDistortion: 0.18
+    - _FoamIntensity: 0.05
+    - _FoamPower: 1.5
+    - _FresnelPower: 0.1
+    - _FresnelStrength: 0.66
+    - _Metallic: 0
+    - _PeakIntensity: 1.42
+    - _PeakPower: 0.51
+    - _RefractionStrength: 0.2
+    - _RippleDensity: 7.5
+    - _RippleFadeIn: 0.35
+    - _RippleFadeOut: 0.8
+    - _RippleFrequency: 20
+    - _RippleNormalStrength: 0.03
+    - _RippleRingCount: 3
+    - _RippleSize: 0.13
+    - _RippleSpeed: 1.48
+    - _RippleStrength: 0.08
+    - _RippleThickness: 0.5
+    - _Smoothness: 0.963
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DeepColor: {r: 0.31042942, g: 0.44800615, b: 0.575, a: 1}
+    - _FlowSpeed: {r: 0.012, g: 0.012, b: 0, a: 0}
+    - _FoamColor: {r: 0.45882353, g: 0.57477015, b: 0.59607846, a: 1}
+    - _PeakColor: {r: 0.48144, g: 0.72216, b: 0.816, a: 1}
+    - _ShallowColor: {r: 0.26666665, g: 0.33737388, b: 0.372549, a: 0.6}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

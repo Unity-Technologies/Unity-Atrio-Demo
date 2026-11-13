@@ -1,0 +1,23 @@
+using System.Collections;
+using UnityEngine;
+using Unity.BuildingBlocks.Gameplay;
+
+// The name shown in the + Add step menu.
+[InteractionStep("#SCRIPTNAME#")]
+public class #SCRIPTNAME# : InteractionStep
+{
+    // Fields show in the Interactable. [SceneObject] marks things that live in the scene (a Transform, a Light); harmless to forget today.
+    [SceneObject] public Transform Target;
+
+    public override IEnumerator Run(Interaction interaction)
+    {
+        // Run is a coroutine: yield return interaction.Wait(1f) waits one second, yield break ends the step.
+        // interaction.Player is the character. Yield to wait: yield return interaction.Wait(0.5f);
+        yield break;
+    }
+
+    public override void Stop(Interaction interaction)
+    {
+        // Put back anything Run changed, if the interactable is stopped early.
+    }
+}

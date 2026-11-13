@@ -1,0 +1,25 @@
+{
+    "name": "Unity.BuildingBlocks.TouchInput.InputSystem",
+    "rootNamespace": "Unity.BuildingBlocks.TouchInput",
+    "references": [
+        "Unity.BuildingBlocks.TouchInput.Core",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "BB_TOUCH_HAS_INPUTSYSTEM"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "1.0.0",
+            "define": "BB_TOUCH_HAS_INPUTSYSTEM"
+        }
+    ],
+    "noEngineReferences": false
+}

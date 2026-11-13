@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2622790590987778483
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Editor::UnityEditor.Rendering.Universal.AssetVersion
+  version: 11
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AlphaWeightedVertexBlend
+  m_Shader: {fileID: -6465566751694194690, guid: d3749a932fd044e4aa9ee80e62125658, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: de9e61898f843db429eaca24449c8bde, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 888dd91e24097094d8c704bc4d05d779, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer1ColorMap:
+        m_Texture: {fileID: 2800000, guid: 5cf50094a31ce4245af4c7715773d9e7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer2ColorMap:
+        m_Texture: {fileID: 2800000, guid: 2880015c52d63c34d89252593bda83f8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer_1_Metallic_R_Smoothness_A_Map:
+        m_Texture: {fileID: 2800000, guid: 9cc01c15db42d5747b8548e49ae97ccc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer_1_Normal_Map:
+        m_Texture: {fileID: 2800000, guid: 7b6d4ea4f2ee21e4f97ebf71860408da, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer_2_Metallic_R_Smoothness_A_Map:
+        m_Texture: {fileID: 2800000, guid: 9cc01c15db42d5747b8548e49ae97ccc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Layer_2_Normal_Map:
+        m_Texture: {fileID: 2800000, guid: 7b6d4ea4f2ee21e4f97ebf71860408da, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicMap:
+        m_Texture: {fileID: 2800000, guid: 60fc7cce5ec5c8b489867eb7c0330028, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Base_Blend_High: 0.5
+    - _Base_Blend_Low: 0
+    - _Cull: 2
+    - _Layer_1_Blend_High: 0.75
+    - _Layer_1_Blend_Low: 0.5
+    - _Layer_1_Blend_Span: 0.032
+    - _Layer_1_Height_Normal: 0.01
+    - _Layer_1_Height_Normal_Intensity: 0.00365
+    - _Layer_2_Blend_High: 1
+    - _Layer_2_Blend_Low: 0.75
+    - _Layer_2_Blend_Span: 0.05
+    - _Layer_2_Height_Normal: 0.00298
+    - _Layer_2_Height_Normal_Intensity: 0.00179
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ScreenSpaceReflections: 1
+    - _ScreenSpaceReflectionsContributeTransparent: 1
+    m_Colors:
+    - _Vector2: {r: -0.05, g: 0.05, b: 0, a: 0}
+    - _Vector2_1: {r: 1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

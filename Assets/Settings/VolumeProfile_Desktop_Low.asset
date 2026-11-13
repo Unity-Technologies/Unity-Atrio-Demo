@@ -1,0 +1,545 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8230397910562197177
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2274cd80d4e22254d98d0282578183e0, type: 3}
+  m_Name: ScreenSpaceReflectionVolumeSettings
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.ScreenSpaceReflectionVolumeSettings
+  active: 1
+  mode:
+    m_OverrideState: 0
+    m_Value: 1
+  reflectionStrength:
+    m_OverrideState: 0
+    m_Value: 1
+  clampReflectedColor:
+    m_OverrideState: 0
+    m_Value: 0
+  maxColorValue:
+    m_OverrideState: 0
+    m_Value: 1
+  resolution:
+    m_OverrideState: 0
+    m_Value: 2
+  upscalingMethod:
+    m_OverrideState: 0
+    m_Value: 1
+  marchingMethod:
+    m_OverrideState: 1
+    m_Value: 1
+  hitRefinementSteps:
+    m_OverrideState: 1
+    m_Value: 5
+  finalThicknessMultiplier:
+    m_OverrideState: 1
+    m_Value: 0.16
+  roughnessFilter:
+    m_OverrideState: 1
+    m_Value: 1
+  roughnessScale:
+    m_OverrideState: 0
+    m_Value: 0
+  contactHardeningScale:
+    m_OverrideState: 1
+    m_Value: 1
+  contactDistanceBias:
+    m_OverrideState: 0
+    m_Value: 0
+  minimumSmoothness:
+    m_OverrideState: 0
+    m_Value: 0.4
+  smoothnessFadeStart:
+    m_OverrideState: 0
+    m_Value: 0.6
+  normalFade:
+    m_OverrideState: 0
+    m_Value: 0
+  screenEdgeFadeDistance:
+    m_OverrideState: 0
+    m_Value: 0.2
+  reflectSky:
+    m_OverrideState: 0
+    m_Value: 1
+  maxRayLength:
+    m_OverrideState: 1
+    m_Value: 30
+  rayLengthFade:
+    m_OverrideState: 0
+    m_Value: 1
+  maxRaySteps:
+    m_OverrideState: 1
+    m_Value: 64
+  objectThickness:
+    m_OverrideState: 1
+    m_Value: 0.01
+  temporalFiltering:
+    m_OverrideState: 1
+    m_Value: 1
+  baseBlendFactor:
+    m_OverrideState: 0
+    m_Value: 0.95
+--- !u!114 &-8104416584915340131
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CopyPasteTestComponent2
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Editor.Tests:UnityEditor.Rendering.Tests:VolumeComponentCopyPasteTests/CopyPasteTestComponent2
+  active: 1
+  p1:
+    m_OverrideState: 1
+    m_Value: 0
+  p2:
+    m_OverrideState: 1
+    m_Value: 0
+  p21:
+    m_OverrideState: 1
+    m_Value: 0
+--- !u!114 &-7750755424749557576
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f3b30c03e6ba64d9a27dc9dba8f28d, type: 3}
+  m_Name: OutlineVolumeComponent
+  m_EditorClassIdentifier: 
+  active: 1
+  Enabled:
+    m_OverrideState: 1
+    m_Value: 0
+--- !u!114 &-7274224791359825572
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd9ee276a1023e439cf7a9c393195fa, type: 3}
+  m_Name: TestAnimationCurveVolumeComponent
+  m_EditorClassIdentifier: 
+  active: 1
+  testParameter:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.5
+        value: 10
+        inSlope: 0
+        outSlope: 10
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 15
+        inSlope: 10
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+--- !u!114 &-5360449096862653589
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeComponentSupportedEverywhere
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Editor.Tests:UnityEngine.Rendering.Tests:VolumeComponentEditorSupportedOnTests/VolumeComponentSupportedEverywhere
+  active: 1
+--- !u!114 &-5139089513906902183
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a00a63fdd6bd2a45ab1f2d869305ffd, type: 3}
+  m_Name: OasisFogVolumeComponent
+  m_EditorClassIdentifier: 
+  active: 1
+  Density:
+    m_OverrideState: 1
+    m_Value: 0
+  StartDistance:
+    m_OverrideState: 1
+    m_Value: 0
+  HeightRange:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 50}
+  Tint:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  SunScatteringIntensity:
+    m_OverrideState: 1
+    m_Value: 2
+--- !u!114 &-581120513425526550
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CopyPasteTestComponent3
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Editor.Tests:UnityEditor.Rendering.Tests:VolumeComponentCopyPasteTests/CopyPasteTestComponent3
+  active: 1
+  p1:
+    m_OverrideState: 1
+    m_Value: 0
+  p2:
+    m_OverrideState: 1
+    m_Value: 0
+  p31:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: VolumeProfile_Desktop_Low
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: 7360358806302219708}
+  - {fileID: -8230397910562197177}
+--- !u!114 &2455155359670168406
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36880d8ecb6d4cf1bcf8af388612970, type: 3}
+  m_Name: FogVolumeComponent
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.FogVolumeComponent
+  active: 1
+  analyticFogColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  volumetricFogAlbedo:
+    m_OverrideState: 1
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  anisotropy:
+    m_OverrideState: 1
+    m_Value: 0.65
+  lightFilter:
+    m_OverrideState: 1
+    m_Value: 0
+  multipleScatteringIntensity:
+    m_OverrideState: 1
+    m_Value: 0
+  denoisingMode:
+    m_OverrideState: 1
+    m_Value: 1
+  volumetricLightingDensityCutoff:
+    m_OverrideState: 1
+    m_Value: 0
+  enableLightCookies:
+    m_OverrideState: 1
+    m_Value: 1
+  screenResolutionPercentage:
+    m_OverrideState: 1
+    m_Value: 12.5
+  volumeSliceCount:
+    m_OverrideState: 1
+    m_Value: 64
+  cutoffDistance:
+    m_OverrideState: 1
+    m_Value: 64
+  sliceDistributionUniformity:
+    m_OverrideState: 1
+    m_Value: 0.75
+  analyticFogBaseHeight:
+    m_OverrideState: 1
+    m_Value: 0
+  analyticFogMaximumHeight:
+    m_OverrideState: 1
+    m_Value: 50
+  maxFogDistance:
+    m_OverrideState: 1
+    m_Value: 5000
+  analyticFogEnabled:
+    m_OverrideState: 1
+    m_Value: 0
+  analyticFogDensityMode:
+    m_OverrideState: 1
+    m_Value: 0
+  analyticFogDensity:
+    m_OverrideState: 1
+    m_Value: 0.01
+  volumetricFogEnabled:
+    m_OverrideState: 1
+    m_Value: 0
+  volumetricFogDensityMode:
+    m_OverrideState: 1
+    m_Value: 0
+  volumetricFogDensity:
+    m_OverrideState: 1
+    m_Value: 0.01
+  volumetricFogDensityTexture:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+  volumetricFogDensityTextureTiling:
+    m_OverrideState: 1
+    m_Value: 1
+  volumetricFogBaseHeight:
+    m_OverrideState: 1
+    m_Value: 0
+  volumetricFogMaximumHeight:
+    m_OverrideState: 1
+    m_Value: 50
+--- !u!114 &3445571422355949681
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36880d8ecb6d4cf1bcf8af388612970, type: 3}
+  m_Name: FogVolumeComponent
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.FogVolumeComponent
+  active: 1
+  analyticFogColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  volumetricFogAlbedo:
+    m_OverrideState: 1
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  anisotropy:
+    m_OverrideState: 1
+    m_Value: 0.65
+  lightFilter:
+    m_OverrideState: 1
+    m_Value: 1
+  multipleScatteringIntensity:
+    m_OverrideState: 1
+    m_Value: 0
+  denoisingMode:
+    m_OverrideState: 1
+    m_Value: 1
+  volumetricLightingDensityCutoff:
+    m_OverrideState: 1
+    m_Value: 0
+  enableLightCookies:
+    m_OverrideState: 1
+    m_Value: 1
+  screenResolutionPercentage:
+    m_OverrideState: 1
+    m_Value: 12.5
+  volumeSliceCount:
+    m_OverrideState: 1
+    m_Value: 256
+  cutoffDistance:
+    m_OverrideState: 1
+    m_Value: 64
+  sliceDistributionUniformity:
+    m_OverrideState: 1
+    m_Value: 0.75
+  analyticFogBaseHeight:
+    m_OverrideState: 1
+    m_Value: 0
+  analyticFogMaximumHeight:
+    m_OverrideState: 1
+    m_Value: 50
+  maxFogDistance:
+    m_OverrideState: 1
+    m_Value: 50
+  analyticFogEnabled:
+    m_OverrideState: 1
+    m_Value: 0
+  analyticFogDensityMode:
+    m_OverrideState: 1
+    m_Value: 0
+  analyticFogDensity:
+    m_OverrideState: 1
+    m_Value: 0.01
+  volumetricFogEnabled:
+    m_OverrideState: 1
+    m_Value: 0
+  volumetricFogDensityMode:
+    m_OverrideState: 1
+    m_Value: 0
+  volumetricFogDensity:
+    m_OverrideState: 1
+    m_Value: 0.01
+  volumetricFogDensityTexture:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+  volumetricFogDensityTextureTiling:
+    m_OverrideState: 1
+    m_Value: 1
+  volumetricFogBaseHeight:
+    m_OverrideState: 1
+    m_Value: 0
+  volumetricFogMaximumHeight:
+    m_OverrideState: 1
+    m_Value: 50
+--- !u!114 &4251301726029935498
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74955a4b0b4243bc87231e8b59ed9140, type: 3}
+  m_Name: TestVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  param:
+    m_OverrideState: 1
+    m_Value: 123
+--- !u!114 &6940869943325143175
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumeComponentSupportedOnAnySRP
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Editor.Tests:UnityEngine.Rendering.Tests:VolumeComponentEditorSupportedOnTests/VolumeComponentSupportedOnAnySRP
+  active: 1
+--- !u!114 &7360358806302219708
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1e685d8f7565142b879339cd471764, type: 3}
+  m_Name: SurfaceCacheGIVolumeOverride
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.SurfaceCacheGIVolumeOverride
+  active: 1
+  enabled:
+    m_OverrideState: 0
+    m_Value: 1
+  intensity:
+    m_OverrideState: 0
+    m_Value: 1
+  lightTransportMultiBounce:
+    m_OverrideState: 0
+    m_Value: 1
+  lightTransportBouncePatchAllocation:
+    m_OverrideState: 0
+    m_Value: 1
+  lightTransportSampleCount:
+    m_OverrideState: 0
+    m_Value: 2
+  lightTransportRenderingLayerMask:
+    m_OverrideState: 0
+    m_Value:
+      serializedVersion: 0
+      m_Bits: 1
+  lightTransportDefragCount:
+    m_OverrideState: 1
+    m_Value: 5
+  lightTransportWarmupSampleMultiplier:
+    m_OverrideState: 0
+    m_Value: 2
+  lightTransportPunctualLightCandidateCount:
+    m_OverrideState: 0
+    m_Value: 4
+  patchFilteringTemporalSmoothing:
+    m_OverrideState: 0
+    m_Value: 0.65
+  patchFilteringSpatialEnabled:
+    m_OverrideState: 0
+    m_Value: 1
+  patchFilteringSpatialSampleCount:
+    m_OverrideState: 1
+    m_Value: 4
+  patchFilteringSpatialRadius:
+    m_OverrideState: 0
+    m_Value: 1
+  patchFilteringPostTemporalEnabled:
+    m_OverrideState: 0
+    m_Value: 1
+  screenFilteringLookupSampleCount:
+    m_OverrideState: 0
+    m_Value: 16
+  screenFilteringDenoisingPassCount:
+    m_OverrideState: 0
+    m_Value: 3
+  volumeSize:
+    m_OverrideState: 0
+    m_Value: 51
+  volumeResolution:
+    m_OverrideState: 0
+    m_Value: 32
+  volumeCascadeCount:
+    m_OverrideState: 0
+    m_Value: 1
+  volumeDistanceFallback:
+    m_OverrideState: 0
+    m_Value: 0
+  volumePatchWarpingEnabled:
+    m_OverrideState: 0
+    m_Value: 1
+  m_SerializedVersion: 1
+--- !u!114 &9122958982931076880
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CopyPasteTestComponent1
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Editor.Tests:UnityEditor.Rendering.Tests:VolumeComponentCopyPasteTests/CopyPasteTestComponent1
+  active: 1
+  p1:
+    m_OverrideState: 1
+    m_Value: 0
+  p2:
+    m_OverrideState: 1
+    m_Value: 0

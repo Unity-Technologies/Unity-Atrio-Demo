@@ -1,0 +1,17 @@
+{
+    "name": "Unity.BuildingBlocks.Gameplay.Character",
+    "rootNamespace": "Unity.BuildingBlocks.Gameplay",
+    "references": [
+        "Unity.BuildingBlocks.Gameplay.Core",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

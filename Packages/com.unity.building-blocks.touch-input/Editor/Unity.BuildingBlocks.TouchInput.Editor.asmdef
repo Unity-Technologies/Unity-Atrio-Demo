@@ -1,0 +1,28 @@
+{
+    "name": "Unity.BuildingBlocks.TouchInput.Editor",
+    "rootNamespace": "Unity.BuildingBlocks.TouchInput.Editor",
+    "references": [
+        "Unity.BuildingBlocks.TouchInput.Core",
+        "Unity.BuildingBlocks.TouchInput.UGUI",
+        "Unity.BuildingBlocks.TouchInput.InputSystem",
+        "UnityEngine.UI",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "1.0.0",
+            "define": "BB_TOUCH_HAS_INPUTSYSTEM"
+        }
+    ],
+    "noEngineReferences": false
+}

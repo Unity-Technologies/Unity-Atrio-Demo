@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd106d37f6ac044478b8f9ac0f2de932, type: 3}
+  m_Name: TorchEquipPromptStyle
+  m_EditorClassIdentifier: Unity.BuildingBlocks.Gameplay.Interactions::Unity.BuildingBlocks.Gameplay.InputPromptStyle
+  m_KeyboardMouse:
+    m_Glyph: {fileID: 21300000, guid: 84230a055361b4d4e97c3036e80e8c8a, type: 3}
+    m_GlyphText: T
+    m_Label: 
+    m_Hide: 0
+  m_Gamepad:
+    m_Glyph: {fileID: 21300000, guid: 8c2547b9926e4f34889b1e3cda26e5e2, type: 3}
+    m_GlyphText: B
+    m_Label: 
+    m_Hide: 0
+  m_Touch:
+    m_Glyph: {fileID: 0}
+    m_GlyphText: 
+    m_Label: 
+    m_Hide: 1
+  m_ARightGamepad:
+    m_Glyph: {fileID: 21300000, guid: 327cb5725022518449e626b6f65c3d62, type: 3}
+    m_GlyphText: A
+    m_Label: 
+    m_Hide: 0
+  m_GlyphBackground: {fileID: 21300000, guid: ec0e57c9bd4cb71488719b833b0d9793, type: 3}
+  m_LabelBackground: {fileID: 21300000, guid: 3ec025c6cdf77db43bb784c48ef16617, type: 3}
+  m_HintDot: {fileID: 0}
+  m_TextColor: {r: 0.99607843, g: 0.85490197, b: 0.6666667, a: 1}
+  m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+  m_FontSize: 40
+  m_GlyphSize: 100
+  m_HintDotSize: 30
+  m_Offset: {x: 30, y: 25}

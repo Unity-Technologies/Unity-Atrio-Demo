@@ -1,0 +1,369 @@
+/* Copied from the gameplay package's Editor/UI/Styles/composites/step-groups.uss. The Mappings card draws in this language. */
+/* Step groups: the interactable's steps (groups schedule the steps). Every group, one step or many, is a
+   quiet box with a name and, for two or more steps, "next waits for". Rows are the drag handle, a
+   glyph, the name and one dim word (the clip, the target), no second line. Drag a row by its handle to
+   reorder it, into another group to join it, or between groups for a group of its own. */
+.blocks-groups__host {
+    margin-top: 2px;
+}
+
+.blocks-beat {
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: var(--color-border-subtle);
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 6px;
+    padding: 0 4px 3px 4px;
+    transition-property: border-color, background-color;
+    transition-duration: 120ms;
+}
+
+/* The group a dragged row will join. */
+.blocks-beat--drop {
+    border-color: var(--color-accent-border);
+    background-color: var(--color-accent-background-soft);
+}
+
+.blocks-beat__header {
+    flex-direction: row;
+    align-items: center;
+    min-height: 26px;
+    padding: 2px 0 0 0;
+}
+
+.blocks-beat__name {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 6px 0 0;
+    min-width: 60px;
+}
+
+.blocks-beat__name .unity-base-text-field__input {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 12px;
+    -unity-font-style: bold;
+    color: var(--color-foreground-strong);
+    padding-left: 3px;
+}
+
+/* Unnamed: the name taken from its steps shows as a dim placeholder. */
+/* Unnamed: the name taken from its steps, same weight, dimmed by an inline colour in C#. */
+
+.blocks-beat__name:hover .unity-base-text-field__input,
+.blocks-beat__name:focus .unity-base-text-field__input {
+    border-color: var(--color-border-subtle);
+    background-color: var(--color-surface-subtle);
+}
+
+.blocks-beat__waits {
+    font-size: 11px;
+    color: var(--color-foreground-dim);
+    margin-right: 2px;
+    flex-shrink: 0;
+}
+
+/* "all ▾" reads as a word with a caret, not a boxed field. */
+.blocks-beat__advance {
+    margin: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: auto;
+    min-width: 0;
+}
+
+/* The default wait ("all") is only worth showing when you reach for it. */
+.blocks-beat__header--default-wait .blocks-beat__waits,
+.blocks-beat__header--default-wait .blocks-beat__advance {
+    opacity: 0;
+}
+
+.blocks-beat__header--default-wait:hover .blocks-beat__waits,
+.blocks-beat__header--default-wait:hover .blocks-beat__advance {
+    opacity: 1;
+}
+
+.blocks-beat__advance .unity-base-popup-field__input {
+    padding-right: 14px;
+    font-size: 11px;
+    min-height: 18px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color-foreground-secondary);
+    padding-left: 3px;
+}
+
+.blocks-beat__advance .unity-base-popup-field__input:hover {
+    background-color: var(--color-surface-subtle);
+}
+
+/* ⋮ on a group or a row: quiet until hovered. */
+.blocks-beat__more,
+.blocks-step__more {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 2px;
+    padding: 0;
+    font-size: 13px;
+    border-width: 0;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color-foreground-muted);
+    flex-shrink: 0;
+    opacity: 0;
+}
+
+.blocks-beat__header:hover .blocks-beat__more,
+.blocks-step:hover .blocks-step__more {
+    opacity: 1;
+}
+
+.blocks-beat__more:hover,
+.blocks-step__more:hover {
+    background-color: var(--color-surface-subtle);
+    color: var(--color-foreground-strong);
+}
+
+.blocks-group__rows {
+    margin: 0;
+}
+
+.blocks-group__empty {
+    color: var(--color-foreground-dim);
+    font-size: 11px;
+    margin: 2px 0 4px 6px;
+}
+
+.blocks-groups__add {
+    align-self: flex-start;
+    margin: 2px 0 4px 0;
+    font-size: 11px;
+}
+
+/* Rows inside a group: one line, flat, the way the Trigger Volume lists objects. */
+.blocks-beats .blocks-step {
+    cursor: move-arrow;
+    min-height: 24px;
+    padding: 0 2px 0 0;
+    margin-bottom: 0;
+    border-radius: 4px;
+}
+
+.blocks-beats .blocks-step__node {
+    display: none;
+}
+
+.blocks-beats .blocks-step--running .blocks-step__node {
+    display: flex;
+    width: 16px;
+    height: 16px;
+}
+
+.blocks-beats .blocks-step__glyph {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    opacity: 1;
+}
+
+/* The drag handle: two columns of three dots, always there, brighter on hover. */
+.blocks-handle {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 8px;
+    height: 12px;
+    margin: 0 8px 0 6px;
+    flex-shrink: 0;
+    opacity: 0.45;
+    transition-property: opacity;
+    transition-duration: 120ms;
+}
+
+.blocks-handle__column {
+    justify-content: space-between;
+    height: 12px;
+}
+
+.blocks-handle__dot {
+    width: 2px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--color-foreground-muted);
+}
+
+.blocks-step:hover .blocks-handle,
+.blocks-step--dragging .blocks-handle {
+    opacity: 1;
+}
+
+/* The word that tells two steps of a kind apart: the clip, the target. */
+.blocks-step__noun {
+    font-size: 12px;
+    color: var(--color-foreground-dim);
+    margin-left: 6px;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blocks-beats .blocks-step__track {
+    left: 6px;
+}
+
+
+.blocks-step--warn .blocks-step__name {
+    color: var(--color-warning-text);
+}
+
+.blocks-step__warn-mark {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    margin: 0 2px;
+    padding: 0;
+    font-size: 10px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    color: var(--color-warning-text);
+    background-color: var(--color-warning-background);
+    flex-shrink: 0;
+}
+
+.blocks-step--done .blocks-step__glyph {
+    opacity: 0.4;
+}
+
+/* The two list titles in the Steps card: "When it plays", "If stopped early". */
+.blocks-steps__section {
+    font-size: 10px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+    color: var(--color-foreground-muted);
+    margin: 2px 0 4px 4px;
+}
+
+.blocks-steps__fold {
+    margin-top: 8px;
+    border-top-width: 1px;
+    border-color: var(--color-border-subtle);
+    padding-top: 4px;
+}
+
+.blocks-steps__fold > .unity-foldout__toggle {
+    margin-left: 0;
+}
+
+.blocks-steps__fold > .unity-foldout__toggle .unity-toggle__text {
+    font-size: 10px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+    color: var(--color-foreground-muted);
+}
+
+.blocks-steps__fold > .unity-foldout__content {
+    margin-left: 0;
+}
+
+/* The Zone row in Starts: the field plus the add button. */
+.blocks-zone-row {
+    flex-direction: row;
+    align-items: center;
+}
+
+/* A row and the settings folded out under it. */
+.blocks-step-frame {
+    flex-shrink: 0;
+}
+
+.blocks-step-frame--dragging {
+    opacity: 0.92;
+}
+
+.blocks-step--open {
+    background-color: var(--color-surface-subtle);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.blocks-step__body {
+    margin: 0 4px 6px 4px;
+    padding: 6px 6px 4px 30px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: var(--color-surface-subtle);
+}
+
+.blocks-step__body .unity-base-field__label {
+    min-width: 110px;
+}
+
+/* The skip checkbox leads the row; the ring sits after it, so both read before the name. */
+.blocks-step__enable--left {
+    margin: 0 4px 0 4px;
+}
+
+.blocks-step__node--inline {
+    margin: 0 8px 0 2px;
+    flex-shrink: 0;
+}
+
+/* Where a dragged row will land. */
+.blocks-drop-line {
+    position: absolute;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--color-accent);
+}
+
+/* Between groups: the row gets a group of its own. A labelled line so it reads apart from joining. */
+.blocks-drop-line--group {
+    height: 2px;
+}
+
+.blocks-drop-line__label {
+    position: absolute;
+    right: 8px;
+    top: -9px;
+    height: 18px;
+    padding: 0 8px;
+    border-radius: 9px;
+    font-size: 10px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    color: var(--color-accent-text);
+    background-color: var(--color-card-background);
+    border-width: 1px;
+    border-color: var(--color-accent-border);
+    display: none;
+}
+
+.blocks-drop-line--group .blocks-drop-line__label {
+    display: flex;
+}
+
+/* The Starts sentence: a dropdown that is the whole line, no label. */
+.blocks-sentence {
+    margin: 2px 0 4px 3px;
+}
+
+.blocks-sentence > .unity-base-popup-field__input {
+    flex-grow: 1;
+}
+
+/* "If stopped early" being empty is fine, so its empty line is dim, not amber. */
+.blocks-steps--quiet-empty .blocks-steps__empty {
+    color: var(--color-foreground-dim);
+    margin: 0 0 6px 0;
+    padding-left: 1px;
+}
+
+/* Name and its word on one line. */
+.blocks-beats .blocks-step__text {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.blocks-beats .blocks-step__name {
+    flex-shrink: 0;
+}

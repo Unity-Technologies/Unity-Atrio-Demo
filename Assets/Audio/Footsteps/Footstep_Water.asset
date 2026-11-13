@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-3294609331458506837
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Footstep_Water_1_{-3294609331458506837}
+  m_AudioClip: {fileID: 8300000, guid: 0047c5ac77c3cd34f9ff7ccfa1161059, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-2508242533246387429
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Footstep_Water_6_{-2508242533246387429}
+  m_AudioClip: {fileID: 8300000, guid: 55457da7a0d597740b0990db42abb774, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1852384472915791229
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Footstep_Water_2_{-1852384472915791229}
+  m_AudioClip: {fileID: 8300000, guid: 530769243535bf6419cd8b27b4d32e08, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1757832225210533530
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Footstep_Water_9_{-1757832225210533530}
+  m_AudioClip: {fileID: 8300000, guid: aa131c10e2bebff46bf03558b21ae786, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1437501502701397006
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Footstep_Water_8_{-1437501502701397006}
+  m_AudioClip: {fileID: 8300000, guid: a06aa8111d82b044c9d82f32c946789e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &3522086635215734887
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Footstep_Water_3_{3522086635215734887}
+  m_AudioClip: {fileID: 8300000, guid: 51ccc8af0a8c4964c8cc68ba92415381, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5355954142828303849
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Footstep_Water_5_{5355954142828303849}
+  m_AudioClip: {fileID: 8300000, guid: b974fb86a6624434c90585f1383ae833, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5504813089953688596
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Footstep_Water_10_{5504813089953688596}
+  m_AudioClip: {fileID: 8300000, guid: d2712ec4a285c184d8f508c07b2560b8, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Footstep_Water
+  m_Volume: 0
+  m_Pitch: 38
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: -142.63565, y: 83.72097}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: -3294609331458506837}
+  - {fileID: -1852384472915791229}
+  - {fileID: 3522086635215734887}
+  - {fileID: 6736122273687176103}
+  - {fileID: 5355954142828303849}
+  - {fileID: -2508242533246387429}
+  - {fileID: 7674545656196060711}
+  - {fileID: -1437501502701397006}
+  - {fileID: -1757832225210533530}
+  - {fileID: 5504813089953688596}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 1
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 1
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &6736122273687176103
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Footstep_Water_4_{6736122273687176103}
+  m_AudioClip: {fileID: 8300000, guid: 246a5026cd8d5784ca0b1a57b69e3379, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &7674545656196060711
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Footstep_Water_7_{7674545656196060711}
+  m_AudioClip: {fileID: 8300000, guid: 0169c7fab428d214b980a160410b4600, type: 3}
+  m_Volume: 0
+  m_Enabled: 1

@@ -1,0 +1,336 @@
+/* Trigger Volume inspector: four cards. Volume is the box in the scene (edit, size, label, colour,
+   priority); Detection is who sets it off and how often (detects, its value, fires, after firing, the
+   sentence they add up to); Connected Interactables lists who points here; Actions is how the volume
+   responds (built-in Active While Inside, then custom enter and exit calls). Fields sit on a fixed
+   104 pt label column so the rows read as sentences: "Detects | Tag", "Tag | Player". */
+
+/* Card headers: the title and one line saying what the card is for. No status on the right. */
+.blocks-tv .blocks-panel__summary {
+    display: none;
+}
+
+/* Connected Interactables: read only, said by a pill at the right of the header. */
+.blocks-tv-pill {
+    font-size: 10px;
+    -unity-font-style: bold;
+    color: var(--color-foreground-muted);
+    background-color: var(--color-surface-subtle);
+    border-width: 1px;
+    border-color: var(--color-border);
+    border-radius: 9px;
+    height: 18px;
+    padding: 0 8px;
+    margin: 0;
+    align-self: center;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Field rows --------------------------------------------------------------------------------- */
+.blocks-tv-field {
+    flex-direction: row;
+    align-items: center;
+    min-height: 24px;
+    margin: 3px 0;
+}
+
+.blocks-tv-field__label {
+    width: 104px;
+    min-width: 104px;
+    flex-shrink: 0;
+    margin-right: 8px;
+    color: var(--color-foreground-secondary);
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blocks-tv-field__control {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: row;
+    align-items: center;
+    min-width: 0;
+}
+
+.blocks-tv-field__control > .unity-base-field {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0;
+    min-width: 0;
+}
+
+/* A fixed-width number next to a hint: Priority. */
+.blocks-tv-field__control > .blocks-tv-narrow {
+    flex-grow: 0;
+    width: 70px;
+    min-width: 70px;
+}
+
+/* The small muted words beside a control: "drag handles in the scene". */
+.blocks-tv-sub {
+    font-size: 10.5px;
+    color: var(--color-foreground-dim);
+    margin-left: 6px;
+    flex-shrink: 1;
+    white-space: normal;
+}
+
+.blocks-tv-field__control > .unity-button {
+    margin: 0;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+/* The bar closing a card: the sentence its settings add up to. A card footer, so it stays on
+   screen when the card is closed. Generated, never typed. --------------------------------------- */
+.blocks-tv-sumbar {
+    margin: 0;
+    padding: 7px 12px;
+    border-top-width: 1px;
+    border-top-color: var(--color-divider);
+    background-color: var(--color-accent-background-soft);
+    color: var(--color-foreground-secondary);
+    font-size: 11px;
+    white-space: normal;
+}
+
+/* A warning line: "!" then the sentence. */
+.blocks-tv-warn {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 7px 0 2px 0;
+    padding: 6px 8px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: var(--color-warning-border);
+    background-color: var(--color-warning-background);
+}
+
+.blocks-tv-warn__icon {
+    -unity-font-style: bold;
+    color: var(--color-warning-text);
+    margin-right: 7px;
+    flex-shrink: 0;
+    font-size: 11px;
+}
+
+.blocks-tv-warn__text {
+    font-size: 11px;
+    color: var(--color-warning-text);
+    white-space: normal;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* Connected Interactables: flat rows, the way the Hierarchy lists objects. Icon, name, and when it
+   starts at the right; hover lights the row, a click selects it. Nothing here edits them. -------- */
+.blocks-tv-list {
+    margin: 2px -6px 0 -6px;
+}
+
+.blocks-tv-irow {
+    flex-direction: row;
+    align-items: center;
+    min-height: 24px;
+    padding: 0 6px;
+    border-radius: 4px;
+}
+
+.blocks-tv-irow:hover {
+    background-color: var(--color-surface-subtle);
+}
+
+.blocks-tv-irow__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    flex-shrink: 0;
+}
+
+.blocks-tv-irow__name {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    font-size: 12px;
+    color: var(--color-foreground-strong);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blocks-tv-irow__verb {
+    margin-left: 8px;
+    margin-right: 6px;
+    color: var(--color-foreground-muted);
+    font-size: 11px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Ping and Select: always visible, quiet until hovered. */
+.blocks-tv-irow__button {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 4px;
+    padding: 2px;
+    flex-shrink: 0;
+    border-width: 0;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0.7;
+}
+
+.blocks-tv-irow__button:hover {
+    background-color: var(--color-surface-subtle);
+    opacity: 1;
+}
+
+/* On press on a volume that does not detect the player: the reason is on the Interactable's Starts card. */
+.blocks-tv-irow--warn .blocks-tv-irow__verb {
+    color: var(--color-warning-text);
+}
+
+.blocks-tv-empty {
+    font-size: 11.5px;
+    color: var(--color-foreground-dim);
+    padding: 4px 6px;
+    white-space: normal;
+}
+
+/* A small dim line under a list: what it shows and where to change it. */
+.blocks-tv-note {
+    margin: 6px 0 0 0;
+    font-size: 11px;
+    color: var(--color-foreground-dim);
+    white-space: normal;
+}
+
+/* Actions: two groups, Built-in then Custom, a divider between them. A group opens with a small-caps
+   title and one plain line; every action under it is a Unity event drawer (the built-in ones reuse
+   Unity's own drawer classes), so both groups read as the same kind of list. */
+.blocks-tv-group {
+    margin-top: 2px;
+}
+
+.blocks-tv-group__title {
+    font-size: 10.5px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+    color: var(--color-foreground-muted);
+    padding: 0 1px;
+    margin: 0;
+}
+
+.blocks-tv-group__desc {
+    font-size: 11px;
+    color: var(--color-foreground-dim);
+    padding: 0 1px;
+    margin: 1px 0 8px 0;
+    white-space: normal;
+}
+
+.blocks-tv-divider {
+    height: 1px;
+    margin: 12px -12px 12px -12px;
+    background-color: var(--color-divider);
+}
+
+.blocks-tv-drawer {
+    margin: 0 0 6px 0;
+}
+
+/* Unity insets its event drawer from the inspector edge; inside a card that only misaligns it. */
+.blocks-tv-drawer .unity-event__container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.blocks-tv-drawer .unity-list-view__footer {
+    margin-right: 0;
+}
+
+.blocks-tv-drawer__desc {
+    font-size: 11px;
+    color: var(--color-foreground-dim);
+    /* On the footer's row, left of Unity's + / − buttons. */
+    margin: -17px 64px 4px 2px;
+    padding: 0;
+    white-space: normal;
+}
+
+/* Narrow inspector (under 340 pt): the label column would starve the controls, so each row stacks
+   its label over its control and the side hints give way to the tooltips. ---------------------- */
+.blocks-tv--narrow .blocks-tv-field {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.blocks-tv--narrow .blocks-tv-field__label {
+    width: auto;
+    min-width: 0;
+    margin: 0 0 2px 0;
+}
+
+.blocks-tv--narrow .blocks-tv-sub {
+    display: none;
+}
+
+.blocks-tv--narrow .blocks-tv-group__desc,
+.blocks-tv--narrow .blocks-tv-irow__verb {
+    display: none;
+}
+
+/* Interactable ▸ Starts: built from the same rows. Detects is read from the volume, with a link to
+   it; Button is ⋮ then either the reference field or "Keys set here", the keys it answers to under
+   it, and the inline action's editor below when inline. ----------------------------------------- */
+.blocks-starts__detects {
+    flex-shrink: 1;
+    color: var(--color-foreground);
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.blocks-tv-field__control > .blocks-starts__link {
+    margin-left: auto;
+    height: auto;
+    font-size: 10.5px;
+    flex-shrink: 1;
+}
+
+.blocks-tv-field__control > .blocks-starts__mode {
+    width: 18px;
+    min-width: 18px;
+    padding: 0;
+    margin-right: 4px;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+}
+
+.blocks-starts__inline {
+    flex-grow: 1;
+    color: var(--color-foreground-secondary);
+    font-size: 12px;
+}
+
+.blocks-tv-sub.blocks-starts__keys {
+    margin-left: 0;
+    margin-top: -2px;
+}
+
+/* Why On press is greyed out: muted, amber once On press is the chosen answer. */
+.blocks-tv-sub.blocks-starts__note--warn {
+    color: var(--color-warning-text);
+}
+
+.blocks-starts__keys-editor {
+    margin: 2px 0 4px 112px;
+}
+
+/* Interactable › Repeats: the wait field is a short number, "seconds" beside it. */
+.blocks-tv-field__control > .blocks-repeats__wait {
+    width: 64px;
+    flex-grow: 0;
+    margin-left: 0;
+    margin-right: 6px;
+}

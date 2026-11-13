@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-8001161375957633855
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LightSwitch_2_{-8001161375957633855}
+  m_AudioClip: {fileID: 8300000, guid: a8eefb2211db58f4f80047a3798f76dd, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-7298808861262663821
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LightSwitch_4_{-7298808861262663821}
+  m_AudioClip: {fileID: 8300000, guid: 4ae94c8533d65a54abb298855c36102d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-6055561501312337686
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LightSwitch_5_{-6055561501312337686}
+  m_AudioClip: {fileID: 8300000, guid: c7a67cd88dcccbc4b8684e15618c8467, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-5402808516183755870
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LightSwitch_9_{-5402808516183755870}
+  m_AudioClip: {fileID: 8300000, guid: 7a0c76d4202218545904f0f4a82da681, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3196194568195889053
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LightSwitch_3_{-3196194568195889053}
+  m_AudioClip: {fileID: 8300000, guid: e179309b7c294c8408f6b87d446c6c27, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &317545859625070167
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LightSwitch_10_{317545859625070167}
+  m_AudioClip: {fileID: 8300000, guid: 9ca87783cf6271d4ab29129f7ae13387, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &882047461719297848
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LightSwitch_6_{882047461719297848}
+  m_AudioClip: {fileID: 8300000, guid: 72cdb44681460724c9d2b52ec5024098, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &1423219373689992740
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LightSwitch_7_{1423219373689992740}
+  m_AudioClip: {fileID: 8300000, guid: 054ca2d3317152a4aa3d22a528fd612d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4534992048290342134
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LightSwitch_8_{4534992048290342134}
+  m_AudioClip: {fileID: 8300000, guid: 313b1cf845bad2b4c9c62955a2abab4e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LightSwitchOnOff
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 7743191286597545751}
+  - {fileID: -8001161375957633855}
+  - {fileID: -3196194568195889053}
+  - {fileID: -7298808861262663821}
+  - {fileID: -6055561501312337686}
+  - {fileID: 882047461719297848}
+  - {fileID: 1423219373689992740}
+  - {fileID: 4534992048290342134}
+  - {fileID: -5402808516183755870}
+  - {fileID: 317545859625070167}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 1
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &7743191286597545751
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LightSwitch_1_{7743191286597545751}
+  m_AudioClip: {fileID: 8300000, guid: dfe3b402340cdad46abd2dae1aface84, type: 3}
+  m_Volume: 0
+  m_Enabled: 1

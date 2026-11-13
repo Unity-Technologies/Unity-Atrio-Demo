@@ -1,0 +1,647 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c88e427ef82d2498c6054fff424815, type: 3}
+  m_Name: QualityTierSettings
+  m_EditorClassIdentifier: Assembly-CSharp::QualityTiers.QualityTierSettings
+  applyInEditor: 1
+  benchmarkShader: {fileID: 4800000, guid: 1f77067a1c7eba74b9af5487f5a324f6, type: 3}
+  benchmarkAllDevicesInDevelopmentBuilds: 1
+  platforms:
+  - platform: 0
+    highQualityLevel: Mobile_High
+    lowQualityLevel: Mobile_Low
+    minMemoryMBForHigh: 10500
+    fallback: 2
+    benchmarkHighThreshold: 0
+    rules:
+    - label: Galaxy S26 series
+      enabled: 1
+      field: 1
+      pattern: SM-S94\d
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: Adreno 840 (full or V Series)
+      enabled: 1
+      field: 0
+      pattern: Adreno[^0-9]*(\d+)
+      minVersion: 840
+      maxVersion: 849
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 2
+    - label: Adreno 830 and older
+      enabled: 1
+      field: 0
+      pattern: Adreno[^0-9]*(\d+)
+      minVersion: 0
+      maxVersion: 839
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Xclipse 960 (Exynos 2600)
+      enabled: 1
+      field: 0
+      pattern: Xclipse[^0-9]*(\d+)
+      minVersion: 960
+      maxVersion: 969
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: Xclipse 950 and older
+      enabled: 1
+      field: 0
+      pattern: Xclipse[^0-9]*(\d+)
+      minVersion: 0
+      maxVersion: 959
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Mali-G1-Ultra (Dimensity 9500)
+      enabled: 1
+      field: 0
+      pattern: Mali-?G1-?Ultra
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: Mali / Immortalis G-series before G1
+      enabled: 1
+      field: 0
+      pattern: (?:Mali|Immortalis)-G\d{2,3}\b
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: PowerVR (e.g. Tensor G5)
+      enabled: 1
+      field: 0
+      pattern: PowerVR
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Maleoon (Huawei Kirin)
+      enabled: 1
+      field: 0
+      pattern: Maleoon
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+  - platform: 1
+    highQualityLevel: Mobile_High
+    lowQualityLevel: Mobile_Low
+    minMemoryMBForHigh: 0
+    fallback: 2
+    benchmarkHighThreshold: 0
+    rules:
+    - label: iPhone 17 Pro / Pro Max
+      enabled: 1
+      field: 1
+      pattern: ^iPhone18,[12]$
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: iPhone 17 / Air / 17e
+      enabled: 1
+      field: 1
+      pattern: ^iPhone18,[3-5]$
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: iPhone 16 and older
+      enabled: 1
+      field: 1
+      pattern: ^iPhone(\d+),
+      minVersion: 0
+      maxVersion: 17
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: iPad Pro (M4)
+      enabled: 1
+      field: 1
+      pattern: ^iPad16,[3-6]$
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: A20 Pro and newer
+      enabled: 1
+      field: 0
+      pattern: Apple A(\d+) Pro
+      minVersion: 20
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: A18 Pro and older
+      enabled: 1
+      field: 0
+      pattern: Apple A(\d+) Pro
+      minVersion: 0
+      maxVersion: 18
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: A19 and older (non-Pro)
+      enabled: 1
+      field: 0
+      pattern: Apple A(\d+) GPU
+      minVersion: 0
+      maxVersion: 19
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: M1 to M3 iPads
+      enabled: 1
+      field: 0
+      pattern: Apple M(\d+)
+      minVersion: 0
+      maxVersion: 3
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+  - platform: 2
+    highQualityLevel: Desktop_High
+    lowQualityLevel: Desktop_Low
+    minMemoryMBForHigh: 0
+    fallback: 2
+    benchmarkHighThreshold: 0
+    rules:
+    - label: RTX 3080 Laptop and up
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4}).*Laptop
+      minVersion: 3080
+      maxVersion: 3099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 4070 Laptop and up
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4}).*Laptop
+      minVersion: 4070
+      maxVersion: 4099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 5070 Laptop and up
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4}).*Laptop
+      minVersion: 5070
+      maxVersion: 5099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: Other RTX 20 to 50 series Laptop
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4}).*Laptop
+      minVersion: 2000
+      maxVersion: 5099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: RTX 3060 Ti
+      enabled: 1
+      field: 0
+      pattern: RTX 3060 Ti
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 2080 / Super / Ti
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4})
+      minVersion: 2080
+      maxVersion: 2099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 3070 and up
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4})
+      minVersion: 3070
+      maxVersion: 3099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 4060 and up
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4})
+      minVersion: 4060
+      maxVersion: 4099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 5060 and up
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4})
+      minVersion: 5060
+      maxVersion: 5099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 20 to 50 series below the bar
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4})
+      minVersion: 2000
+      maxVersion: 5099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: GTX / GT / MX GeForce
+      enabled: 1
+      field: 0
+      pattern: GeForce (?:GTX|GT |MX)
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Radeon RX 6700 XT and up
+      enabled: 1
+      field: 0
+      pattern: Radeon RX (\d{4})
+      minVersion: 6700
+      maxVersion: 6999
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: Radeon RX 7700 XT and up
+      enabled: 1
+      field: 0
+      pattern: Radeon RX (\d{4})
+      minVersion: 7700
+      maxVersion: 7999
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: Radeon RX 9060 XT and up
+      enabled: 1
+      field: 0
+      pattern: Radeon RX (\d{4})
+      minVersion: 9060
+      maxVersion: 9099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: Radeon RX 5000 to 9000 below the bar
+      enabled: 1
+      field: 0
+      pattern: Radeon RX (\d{4})
+      minVersion: 5000
+      maxVersion: 9099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Radeon RX 400 / 500 / Vega
+      enabled: 1
+      field: 0
+      pattern: Radeon (?:RX [45]\d{2}\b|RX Vega|Vega)
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Radeon integrated graphics
+      enabled: 1
+      field: 0
+      pattern: Radeon(?:\(TM\))? (?:\d{3}M\b|Graphics)
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Intel Arc B580
+      enabled: 1
+      field: 0
+      pattern: Arc.*B580
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: Intel Arc A-series / B570
+      enabled: 1
+      field: 0
+      pattern: Arc.*(?:A\d{3}|B570)
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Intel integrated graphics
+      enabled: 1
+      field: 0
+      pattern: Intel.*(?:UHD|Iris|HD Graphics|Arc\(TM\) Graphics|Arc Graphics)
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Software renderer
+      enabled: 1
+      field: 0
+      pattern: Basic Render|llvmpipe|SwiftShader
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+  - platform: 3
+    highQualityLevel: Desktop_High
+    lowQualityLevel: Desktop_Low
+    minMemoryMBForHigh: 0
+    fallback: 2
+    benchmarkHighThreshold: 0
+    rules:
+    - label: M2 Ultra and newer
+      enabled: 1
+      field: 0
+      pattern: Apple M(\d+) Ultra
+      minVersion: 2
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: M1 Ultra
+      enabled: 1
+      field: 0
+      pattern: Apple M(\d+) Ultra
+      minVersion: 0
+      maxVersion: 1
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: M3 Max and newer
+      enabled: 1
+      field: 0
+      pattern: Apple M(\d+) Max
+      minVersion: 3
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: M1 / M2 Max
+      enabled: 1
+      field: 0
+      pattern: Apple M(\d+) Max
+      minVersion: 0
+      maxVersion: 2
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: M1 to M4 Pro
+      enabled: 1
+      field: 0
+      pattern: Apple M(\d+) Pro
+      minVersion: 0
+      maxVersion: 4
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: M1 to M6 (base)
+      enabled: 1
+      field: 0
+      pattern: Apple M(\d+)(?!\d| Pro| Max| Ultra)
+      minVersion: 0
+      maxVersion: 6
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Intel Mac GPUs
+      enabled: 1
+      field: 0
+      pattern: Radeon Pro|Intel
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+  - platform: 4
+    highQualityLevel: Desktop_High
+    lowQualityLevel: Desktop_Low
+    minMemoryMBForHigh: 0
+    fallback: 2
+    benchmarkHighThreshold: 0
+    rules:
+    - label: RTX 3080 Laptop and up
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4}).*Laptop
+      minVersion: 3080
+      maxVersion: 3099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 4070 Laptop and up
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4}).*Laptop
+      minVersion: 4070
+      maxVersion: 4099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 5070 Laptop and up
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4}).*Laptop
+      minVersion: 5070
+      maxVersion: 5099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: Other RTX 20 to 50 series Laptop
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4}).*Laptop
+      minVersion: 2000
+      maxVersion: 5099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: RTX 3060 Ti
+      enabled: 1
+      field: 0
+      pattern: RTX 3060 Ti
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 2080 / Super / Ti
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4})
+      minVersion: 2080
+      maxVersion: 2099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 3070 and up
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4})
+      minVersion: 3070
+      maxVersion: 3099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 4060 and up
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4})
+      minVersion: 4060
+      maxVersion: 4099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 5060 and up
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4})
+      minVersion: 5060
+      maxVersion: 5099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: RTX 20 to 50 series below the bar
+      enabled: 1
+      field: 0
+      pattern: RTX (\d{4})
+      minVersion: 2000
+      maxVersion: 5099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: GTX / GT / MX GeForce
+      enabled: 1
+      field: 0
+      pattern: GeForce (?:GTX|GT |MX)
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Radeon RX 6700 XT and up
+      enabled: 1
+      field: 0
+      pattern: Radeon RX (\d{4})
+      minVersion: 6700
+      maxVersion: 6999
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: Radeon RX 7700 XT and up
+      enabled: 1
+      field: 0
+      pattern: Radeon RX (\d{4})
+      minVersion: 7700
+      maxVersion: 7999
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: Radeon RX 9060 XT and up
+      enabled: 1
+      field: 0
+      pattern: Radeon RX (\d{4})
+      minVersion: 9060
+      maxVersion: 9099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: Radeon RX 5000 to 9000 below the bar
+      enabled: 1
+      field: 0
+      pattern: Radeon RX (\d{4})
+      minVersion: 5000
+      maxVersion: 9099
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Radeon RX 400 / 500 / Vega
+      enabled: 1
+      field: 0
+      pattern: Radeon (?:RX [45]\d{2}\b|RX Vega|Vega)
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Radeon integrated graphics
+      enabled: 1
+      field: 0
+      pattern: Radeon(?:\(TM\))? (?:\d{3}M\b|Graphics)
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Intel Arc B580
+      enabled: 1
+      field: 0
+      pattern: Arc.*B580
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 0
+    - label: Intel Arc A-series / B570
+      enabled: 1
+      field: 0
+      pattern: Arc.*(?:A\d{3}|B570)
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Intel integrated graphics
+      enabled: 1
+      field: 0
+      pattern: Intel.*(?:UHD|Iris|HD Graphics|Arc\(TM\) Graphics|Arc Graphics)
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1
+    - label: Software renderer
+      enabled: 1
+      field: 0
+      pattern: Basic Render|llvmpipe|SwiftShader
+      minVersion: 0
+      maxVersion: 0
+      minMemoryMB: 0
+      minCpuCores: 0
+      outcome: 1

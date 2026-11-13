@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-8188988335406739951
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Bird4_04_{-8188988335406739951}
+  m_AudioClip: {fileID: 8300000, guid: b47a054fa2357964ab880c09f09797a6, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &3034861239128026975
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Bird4_03_{3034861239128026975}
+  m_AudioClip: {fileID: 8300000, guid: 1484fde561db0f04b9c3f02ab3772785, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4718218353130132552
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Bird4_01_{4718218353130132552}
+  m_AudioClip: {fileID: 8300000, guid: 60c17452aef9f1f48983eb0b97ba67bb, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Bird_004
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 4718218353130132552}
+  - {fileID: 7544880554089240841}
+  - {fileID: 3034861239128026975}
+  - {fileID: -8188988335406739951}
+  - {fileID: 8665710580112144119}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 1
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &7544880554089240841
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Bird4_02_{7544880554089240841}
+  m_AudioClip: {fileID: 8300000, guid: 5bf392f5e5daa3540b107effabbee187, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &8665710580112144119
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Bird4_05_{8665710580112144119}
+  m_AudioClip: {fileID: 8300000, guid: d9ebe2b19eaeb6e46b9a45187166f16f, type: 3}
+  m_Volume: 0
+  m_Enabled: 1

@@ -1,0 +1,21 @@
+{
+    "name": "Unity.BuildingBlocks.Gameplay.Editor",
+    "rootNamespace": "Unity.BuildingBlocks.Gameplay.Editor",
+    "references": [
+        "Unity.BuildingBlocks.Gameplay.Core",
+        "Unity.BuildingBlocks.Gameplay.Character",
+        "Unity.BuildingBlocks.Gameplay.Interactions",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
