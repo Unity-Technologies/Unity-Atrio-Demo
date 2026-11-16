@@ -125,6 +125,7 @@ MonoBehaviour:
       - rid: 649774568224325632
       - rid: 552786272545669120
       - rid: 552786272545669121
+      - rid: 8610620076588531758
     m_RuntimeSettings:
       m_List:
       - rid: 9001670353970266268
@@ -205,6 +206,14 @@ MonoBehaviour:
         m_VolumeVoxelizationCS: {fileID: 7200000, guid: 4db526993be047f3beddd1bdb473987c, type: 3}
         m_ApplyVolumetricFogPS: {fileID: 4800000, guid: 626ea649d972a4024a222609afe7c0aa, type: 3}
         m_ScreenSpaceMultipleScatteringPS: {fileID: 4800000, guid: 8adee7bc8c4d44d3aea47ab223d28034, type: 3}
+    - rid: 8610620076588531758
+      type: {class: NTCSettings, ns: UnityEngine.Experimental.Rendering.NeuralGraphics, asm: Unity.Neural.Rendering}
+      data:
+        m_Version: 0
+        m_Enabled: 1
+        m_Weights: {fileID: 0}
+        m_Materials: []
+        m_Mode: 0
     - rid: 9001670353970266268
       type: {class: Shadow2DGeometrySettings, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data:
