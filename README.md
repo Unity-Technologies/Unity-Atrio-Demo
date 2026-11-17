@@ -39,7 +39,7 @@ Interactions are built as sequences of steps. The project's own custom steps are
 
 ### Neural Rendering (early preview)
 
-Neural Texture Compression (NTC) is available as part of the Neural Rendering package. NTC lets you encode texture sets in a more efficient representation, delivering on average 50% compression savings compared to BCn on URP materials, at the cost of decoding materials per pixel.
+Neural Texture Compression (NTC) is available as part of the Neural Rendering package. NTC lets you encode texture sets in a more efficient representation, delivering on average 50% compression savings compared to BCn on URP materials, at the cost of an overhead when decoding materials per pixel.
 
 Not all materials are compressed with NTC, so URP supports mixing traditional and NTC materials in the same scene.
 
@@ -55,7 +55,7 @@ When you make a build, Unity only includes the texture sets needed for the selec
 
 For how to use NTC, train materials and create custom shaders that support NTC, see the Neural Rendering package documentation.
 
-> **Note:** The Neural Rendering package is in early preview. Shaders, APIs, networks and workflows may change before release.
+> **Note:** The Neural Rendering package is in early preview. Shaders, APIs, networks and workflows may change before release. NTC quality and performance is not final.
 
 ---
 
