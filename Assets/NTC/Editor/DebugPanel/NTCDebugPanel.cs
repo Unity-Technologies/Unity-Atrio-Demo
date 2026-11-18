@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using Unity.Profiling;
 using Unity.Profiling.LowLevel;
 using UnityEditor;
-using UnityEditor.Experimental.Rendering.NeuralGraphics;
+using UnityEditor.Experimental.Neural.Rendering;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.Experimental.Rendering.NeuralGraphics;
+using UnityEngine.Experimental.Neural.Rendering;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.UI;
 using UnityEngine.LowLevel;
@@ -249,9 +249,9 @@ namespace NTC.Editor
         {
             if (s_Settings == null)
                 return;
-            // Swaps the tracked materials between their NTC and conventional shaders, for this
-            // play session only.
-            NTCMaterialSwitcher.SetNTCEnabled(!s_Settings.enabled);
+            // NTCMaterialSwitcher swaps the tracked materials between their NTC and conventional
+            // shaders on the resulting callback, for this play session only.
+            s_Settings.enabled = !s_Settings.enabled;
             s_Switch?.Animate(s_Settings.enabled);
             UpdateNTCLabel();
         }

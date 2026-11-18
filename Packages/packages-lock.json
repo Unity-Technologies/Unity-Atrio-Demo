@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.unity.ai.training": {
-      "version": "ssh://git@github.cds.internal.unity3d.com/unity/UnityInferenceEngine.git?path=/NeuralRendering/com.unity.ai.training#ntc/multi-material",
+      "version": "ssh://git@github.cds.internal.unity3d.com/unity/UnityInferenceEngine.git?path=/NeuralRendering/com.unity.ai.training#dev",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -10,7 +10,7 @@
         "com.unity.render-pipelines.universal": "17.7.0",
         "com.unity.shadergraph": "17.7.0"
       },
-      "hash": "91cba03b98d7e8ca4e385b52c5da3b3eb1afdea0"
+      "hash": "ec7561e9d25b52645f9d10b4e67341484974a9ab"
     },
     "com.unity.building-blocks.gameplay": {
       "version": "file:com.unity.building-blocks.gameplay",

@@ -126,36 +126,9 @@ MonoBehaviour:
       - rid: 552786272545669120
       - rid: 552786272545669121
       - rid: 8610620076588531758
+      - rid: 8610620104451031269
     m_RuntimeSettings:
-      m_List:
-      - rid: 9001670353970266268
-      - rid: 9001670353970266270
-      - rid: 9001670353970266273
-      - rid: 9001670353970266274
-      - rid: 9001670353970266275
-      - rid: 9001670353970266276
-      - rid: 9001670353970266277
-      - rid: 9001670353970266279
-      - rid: 9001670353970266280
-      - rid: 9001670353970266281
-      - rid: 9001670353970266282
-      - rid: 9001670353970266283
-      - rid: 9001670353970266287
-      - rid: 9001670353970266289
-      - rid: 9001670353970266293
-      - rid: 9001670353970266295
-      - rid: 9001670353970266296
-      - rid: 9001670353970266297
-      - rid: 9001670353970266298
-      - rid: 9001670353970266299
-      - rid: 9001670353970266300
-      - rid: 9001670353970266304
-      - rid: 9001670353970266305
-      - rid: 9001670353970266306
-      - rid: 9001670353970266308
-      - rid: 9001670353970266311
-      - rid: 552786272545669120
-      - rid: 552786272545669121
+      m_List: []
   m_AssetVersion: 14
   m_ObsoleteDefaultVolumeProfile: {fileID: 0}
   m_RenderingLayerNames:
@@ -208,6 +181,14 @@ MonoBehaviour:
         m_ScreenSpaceMultipleScatteringPS: {fileID: 4800000, guid: 8adee7bc8c4d44d3aea47ab223d28034, type: 3}
     - rid: 8610620076588531758
       type: {class: NTCSettings, ns: UnityEngine.Experimental.Rendering.NeuralGraphics, asm: Unity.Neural.Rendering}
+      data:
+        m_Version: 0
+        m_Enabled: 1
+        m_Weights: {instanceID: 0}
+        m_Materials: []
+        m_Mode: 0
+    - rid: 8610620104451031269
+      type: {class: NTCSettings, ns: UnityEngine.Experimental.Neural.Rendering, asm: Unity.Neural.Rendering}
       data:
         m_Version: 0
         m_Enabled: 1
