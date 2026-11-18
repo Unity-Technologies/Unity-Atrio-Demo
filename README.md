@@ -37,6 +37,26 @@ Interactions are built as sequences of steps. The project's own custom steps are
 
 > **Note:** Building Blocks is an early preview. Component names, APIs and workflows may change before release.
 
+### Neural Rendering (early preview)
+
+Neural Texture Compression (NTC) is available as part of the Neural Rendering package. NTC lets you encode texture sets in a more efficient representation, delivering on average 50% compression savings compared to BCn on URP materials, at the cost of an overhead when decoding materials per pixel.
+
+Not all materials are compressed with NTC, so URP supports mixing traditional and NTC materials in the same scene.
+
+The Atrio project contains both traditional and neural texture representations, and you can preview NTC on and off in the Editor.
+
+Press `Tab` to open the Debug Panel, then press `N` or click the toggle to switch NTC on and off.
+
+<p align="center">
+  <img src="Documentation/Images/ntc-panel.jpg" alt="The Debug Panel with the NTC toggle on, showing GBuffer, GPU and CPU timings and FPS">
+</p>
+
+When you make a build, Unity only includes the texture sets needed for the selected NTC configuration. In Atrio, we saw 30% texture memory savings with NTC enabled.
+
+For how to use NTC, train materials and create custom shaders that support NTC, see the Neural Rendering package documentation.
+
+> **Note:** The Neural Rendering package is in early preview. Shaders, APIs, networks and workflows may change before release. NTC quality and performance is not final.
+
 ---
 
 ## Things to do in the scene
@@ -77,6 +97,7 @@ Birds flock and settle around the courtyard, butterflies flutter between the pla
 
 - **Unity 6.7** (`6000.7.0b8` or later). Install it from the Unity Hub.
 - **Universal Render Pipeline** `17.7.0` (resolved automatically from the project manifest).
+- **Neural Rendering** `1.0.0-exp.1` (resolved automatically from the project manifest).
 
 ### Open and play
 
@@ -99,6 +120,8 @@ Birds flock and settle around the courtyard, butterflies flutter between the pla
 | Sprint | `Left Shift` | Left stick press | — |
 | Slow-Walk | `Left Ctrl` | — | — |
 | Release mouse cursor | `Esc` | — | — |
+| Debug Panel | `Tab` | — | — |
+| Toggle NTC on/off | `N` | — | — |
 
 Gamepad buttons are named by their position among the four face buttons (North, South, East and West), not by the letter or symbol printed on them, because those differ between gamepads.
 
@@ -112,6 +135,8 @@ Atrio is built to run on many platforms, from desktop PCs to mobile devices with
 
 Its optimizations aren't hidden: they're plain settings and scripts in the project, so you can study them and reuse them in your own work.
 
+> **Note:** The Neural Rendering package is only available on Windows (DX12) and macOS (Metal).
+
 ### Quality tiers
 
 Each platform has a **High** and a **Low** quality level, and Atrio picks one automatically for the device it's running on:
@@ -123,7 +148,7 @@ Each platform has a **High** and a **Low** quality level, and Atrio picks one au
 | `Mobile_High` | 0.5 | 2048 / 1024 | Medium |
 | `Mobile_Low` | 0.4 | 2048 / none | Low |
 
-Each level has its own URP asset (`RPAsset_*`) and volume profile (`VolumeProfile_*`), and all four render with Forward+ through the same renderer, `Renderer_Common`. `VolumeProfile_Mobile_High` is the project's default profile; the others override only what's different: the SCGI and SSR settings on every other level, plus GTAO on `Desktop_High` and Bloom, which is turned off, on `Mobile_Low`.
+Each level has its own URP asset (`RPAsset_*`) and volume profile (`VolumeProfile_*`), and all four render with Deferred+ through the same renderer, `Renderer_Common`. `VolumeProfile_Mobile_High` is the project's default profile; the others override only what's different: the SCGI and SSR settings on every other level, plus GTAO on `Desktop_High` and Bloom, which is turned off, on `Mobile_Low`.
 
 How the level is chosen (see `Assets/Scripts/QualityTiers` and `Assets/Settings/Resources/QualityTierSettings.asset`):
 
@@ -161,6 +186,7 @@ How the level is chosen (see `Assets/Scripts/QualityTiers` and `Assets/Settings/
 | `Assets/Audio/` | Sound effects, ambience, the `Atrio` audio mixer and the audio prefabs. See the [Audio README](Assets/Audio/README.md) for how every sound is triggered and routed. |
 | `Assets/Input/` | Input System action assets for the first-person controls. |
 | `Assets/VFX/` | Fireflies, butterflies and moths, the Orrery glow, torch effects and wind trails, plus a `GIEmitter` shader that adds light to SCGI without being drawn itself. |
+| `Assets/NTC/` | Contains utilities and custom shader graphs that work with NTC. |
 
 In the scene, the hierarchy is split into top-level groups (`Systems`, `Lighting`, `Gameplay`, `Environment`, `Audio`, `VFX`) so you can find each part quickly.
 
