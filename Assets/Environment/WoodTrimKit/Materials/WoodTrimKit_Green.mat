@@ -8,22 +8,22 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WoodTrimKit_Green
-  m_Shader: {fileID: 4800000, guid: 042b3231b2e93aa4bba9af50dbe26139, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 78da98339aea495a86ef8fa6af05041b, type: 3}
   m_Parent: {fileID: 2100000, guid: 3a4e10f7113098e43be1e02992c6f6fc, type: 2}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _METALLICSPECGLOSSMAP
   - _NORMALMAP
   - _OCCLUSIONMAP
   - _SCALE_ADAPTIVE_UV_Y_FROM_X
-  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
-  disabledShaderPasses: []
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3

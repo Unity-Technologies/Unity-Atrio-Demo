@@ -21,22 +21,22 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WoodTrimKit
-  m_Shader: {fileID: 4800000, guid: 042b3231b2e93aa4bba9af50dbe26139, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 78da98339aea495a86ef8fa6af05041b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _METALLICSPECGLOSSMAP
   - _NORMALMAP
   - _OCCLUSIONMAP
   - _SCALE_ADAPTIVE_UV_Y_FROM_X
-  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
-  disabledShaderPasses: []
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -75,6 +75,22 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 2800000, guid: bd650d9ea84fb854cb32558bc156296c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NeuralTextureLatent0:
+        m_Texture: {fileID: 2800000, guid: 5a28623da9a551b40b3f743038de93c8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NeuralTextureLatent1:
+        m_Texture: {fileID: 2800000, guid: d752538e642c39f4a9a6444476069331, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NeuralTextureLatent2:
+        m_Texture: {fileID: 2800000, guid: 39a1754a6e3c5b04d96a2b615937e55b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NeuralTextureLatent3:
+        m_Texture: {fileID: 2800000, guid: e0cf329dbe44928468a820cadcc52a3c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -117,13 +133,17 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
+    - _EMISSION: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
+    - _NTCMaterialIndex: 43
     - _OcclusionStrength: 0
+    - _PARALLAXMAP: 0
     - _Parallax: 0.005
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveFog: 1
     - _ReceiveShadows: 1

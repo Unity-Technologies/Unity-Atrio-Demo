@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Torch_Off
-  m_Shader: {fileID: -6465566751694194690, guid: c4ce5ca44342bb24f9a992b5a36fd349, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: dbca5174825c44529b9b7ce20519995b, type: 3}
   m_Parent: {fileID: 2100000, guid: fc363f7e23104fb44a8306da16691592, type: 2}
   m_ModifiedSerializedProperties: 2
   m_ValidKeywords: []
@@ -17,8 +17,7 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
   m_LockedProperties: 
@@ -29,8 +28,25 @@ Material:
         m_Texture: {fileID: 2800000, guid: dda86978cd233114c848224a9637518c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NeuralTextureLatent0:
+        m_Texture: {fileID: 2800000, guid: 8fc2ceeb332d49e2989d33f70e66bebd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NeuralTextureLatent1:
+        m_Texture: {fileID: 2800000, guid: ea6a3180208647d5aba6b7ccb0c9490a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NeuralTextureLatent2:
+        m_Texture: {fileID: 2800000, guid: 0077c612877449f3bb0db1a36432c827, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NeuralTextureLatent3:
+        m_Texture: {fileID: 2800000, guid: 6316b07224554d319365755a3fcc37b4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _NTCMaterialIndex: 38
     m_Colors:
     - _EmissionColour: {r: 4.138744, g: 4.138744, b: 4.138744, a: 1}
   m_BuildTextureStacks: []

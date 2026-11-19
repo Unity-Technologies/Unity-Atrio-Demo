@@ -21,24 +21,24 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FloorTile_001
-  m_Shader: {fileID: 4800000, guid: 042b3231b2e93aa4bba9af50dbe26139, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 78da98339aea495a86ef8fa6af05041b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _PARALLAXMAP
+  m_InvalidKeywords:
   - _METALLICSPECGLOSSMAP
   - _NORMALMAP
   - _OCCLUSIONMAP
-  - _PARALLAXMAP
   - _SCALE_ADAPTIVE_UV_X_FROM_Z
   - _SCALE_ADAPTIVE_UV_Y_FROM_X
-  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
-  disabledShaderPasses: []
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_LockedProperties: _TilingY
   m_SavedProperties:
     serializedVersion: 3
@@ -77,6 +77,22 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 2800000, guid: 0529973107c93c44da0b14c06635c35d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NeuralTextureLatent0:
+        m_Texture: {fileID: 2800000, guid: 8ee26a93090722f49a2edf9f649eec88, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NeuralTextureLatent1:
+        m_Texture: {fileID: 2800000, guid: 0542fd5b8947ed04d9d650e3ce67bebe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NeuralTextureLatent2:
+        m_Texture: {fileID: 2800000, guid: 899f25c17e4331347beb2ad419305287, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NeuralTextureLatent3:
+        m_Texture: {fileID: 2800000, guid: 69dc96fe41c71eb4d889a2a5dc8bfdd3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -119,13 +135,17 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
+    - _EMISSION: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0.03
+    - _NTCMaterialIndex: 27
     - _OcclusionStrength: 1
+    - _PARALLAXMAP: 1
     - _Parallax: 0.025
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveFog: 1
     - _ReceiveShadows: 1
