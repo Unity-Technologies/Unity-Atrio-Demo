@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8b482146941e3c459c8e252fbe71de5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.Neural.Rendering.Editor::UnityEditor.Experimental.Rendering.NeuralGraphics.NTCShaderPairs
+  m_EditorClassIdentifier: Unity.Neural.Rendering.Editor::UnityEditor.Experimental.Neural.Rendering.NTCShaderPairs
   m_Pairs:
   - conventional: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
     ntc: {fileID: -6465566751694194690, guid: 3cd3cb2b89c21fb4ea785cbf12b45b35, type: 3}

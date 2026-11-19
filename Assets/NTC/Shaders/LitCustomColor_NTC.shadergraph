@@ -3431,7 +3431,7 @@
                     "asm": "Unity.GraphAuthoring.Editor"
                 },
                 "data": {
-                    "m_providerKey": "Unity.NeuralGraphics.NTC.SampleTextureSetNTCCustomColor",
+                    "m_providerKey": "Unity.Neural.Rendering.NTC.SampleTextureSetNTCCustomColor",
                     "m_version": "",
                     "m_sourceAssetId": "8bb7fb7b5cb4444aa6b1c704cfee9535"
                 }

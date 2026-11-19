@@ -1,17 +1,5 @@
 {
   "dependencies": {
-    "com.unity.ai.training": {
-      "version": "ssh://git@github.cds.internal.unity3d.com/unity/UnityInferenceEngine.git?path=/NeuralRendering/com.unity.ai.training#dev",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.2.1",
-        "com.unity.modules.imageconversion": "1.0.0",
-        "com.unity.render-pipelines.universal": "17.7.0",
-        "com.unity.shadergraph": "17.7.0"
-      },
-      "hash": "ec7561e9d25b52645f9d10b4e67341484974a9ab"
-    },
     "com.unity.building-blocks.gameplay": {
       "version": "file:com.unity.building-blocks.gameplay",
       "depth": 0,
@@ -84,6 +72,21 @@
       "dependencies": {
         "com.unity.modules.uielements": "1.0.0"
       }
+    },
+    "com.unity.neural.rendering": {
+      "version": "ssh://git@github.cds.internal.unity3d.com/unity/UnityInferenceEngine.git?path=/NeuralRendering/com.unity.neural.rendering#neural-rendering-package",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.render-pipelines.universal": "17.7.0",
+        "com.unity.shadergraph": "17.7.0",
+        "com.unity.modules.imageconversion": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.uielements": "1.0.0"
+      },
+      "hash": "be46477d063b57551800c2b61bb74848890ae341"
     },
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.6",
@@ -234,7 +237,7 @@
     },
     "com.unity.modules.imgui": {
       "version": "1.0.0",
-      "depth": 2,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {}
     },

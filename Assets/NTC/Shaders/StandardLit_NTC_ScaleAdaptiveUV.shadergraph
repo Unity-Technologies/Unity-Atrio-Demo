@@ -3829,7 +3829,7 @@
                     "asm": "Unity.GraphAuthoring.Editor"
                 },
                 "data": {
-                    "m_providerKey": "Unity.NeuralGraphics.NTC.SampleTextureSetNTC",
+                    "m_providerKey": "Unity.Neural.Rendering.NTC.SampleTextureSetNTC",
                     "m_version": "",
                     "m_sourceAssetId": "d53aae86b6654aa7a5fa2e105595762e"
                 }

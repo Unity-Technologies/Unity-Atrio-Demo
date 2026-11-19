@@ -9,6 +9,6 @@
     "com.unity.modules.audio": "1.0.0",
     "com.unity.modules.particlesystem": "1.0.0",
     "com.unity.modules.physics": "1.0.0",
-    "com.unity.ai.training": "ssh://git@github.cds.internal.unity3d.com/unity/UnityInferenceEngine.git?path=/NeuralRendering/com.unity.ai.training#dev"
+    "com.unity.neural.rendering": "ssh://git@github.cds.internal.unity3d.com/unity/UnityInferenceEngine.git?path=/NeuralRendering/com.unity.neural.rendering#neural-rendering-package"
   }
 }

@@ -3,7 +3,7 @@
 
 #include "ShaderApiReflectionSupport.hlsl"
 #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/GlobalSamplers.hlsl"
-#include "Packages/com.unity.ai.training/Runtime/NeuralRendering/NTC/NTCDecode.hlsl"
+#include "Packages/com.unity.neural.rendering/Runtime/NeuralRendering/NTC/NTCDecode.hlsl"
 
 // The decode for LitCustomColor_NTC and LitCustomColorWind_NTC. It is the package's Sample Texture Set
 // (NTC) node with the extra outputs those graphs sample conventionally: the base map's alpha (tint
@@ -26,7 +26,7 @@ void NTCCustomColorSampleLatents(float2 uv, float2 dUVdx, float2 dUVdy, out floa
 }
 
 /// <funchints>
-///     <sg:ProviderKey>Unity.NeuralGraphics.NTC.SampleTextureSetNTCCustomColor</sg:ProviderKey>
+///     <sg:ProviderKey>Unity.Neural.Rendering.NTC.SampleTextureSetNTCCustomColor</sg:ProviderKey>
 ///     <sg:DisplayName>Sample Texture Set (NTC, Custom Color)</sg:DisplayName>
 ///     <sg:SearchCategory>Input/Neural</sg:SearchCategory>
 ///     <sg:SearchName>Sample Texture Set NTC Custom Color</sg:SearchName>
