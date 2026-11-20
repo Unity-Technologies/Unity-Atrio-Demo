@@ -74,7 +74,7 @@
       }
     },
     "com.unity.neural.rendering": {
-      "version": "ssh://git@github.cds.internal.unity3d.com/unity/UnityInferenceEngine.git?path=/NeuralRendering/com.unity.neural.rendering#neural-rendering-package",
+      "version": "ssh://git@github.cds.internal.unity3d.com/unity/UnityInferenceEngine.git?path=/NeuralRendering/com.unity.neural.rendering#dev",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -86,7 +86,7 @@
         "com.unity.modules.jsonserialize": "1.0.0",
         "com.unity.modules.uielements": "1.0.0"
       },
-      "hash": "be46477d063b57551800c2b61bb74848890ae341"
+      "hash": "d94dcd6c4da703bb5f7b5114ff2bc82aadafe995"
     },
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.6",
