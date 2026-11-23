@@ -43,6 +43,9 @@ namespace NTC.Editor
 
         static NTCSettings s_Settings;
 
+        // GPU timings (GBuffer pass, GPU frame time) are only reliable on D3D12; other APIs show n/a.
+        static bool s_GpuTimingsSupported;
+
         static ProfilerRecorder s_CpuMainThreadTimeRecorder;
         static ProfilerRecorder s_GpuFrameTimeRecorder;
         static ProfilerRecorder s_MainThreadTimeRecorder;
@@ -143,6 +146,8 @@ namespace NTC.Editor
             s_FPS = Find<Text>(root, "Panel/FPS/FPS_Stat");
             s_Panel.SetActive(false);
 
+            s_GpuTimingsSupported = SystemInfo.graphicsDeviceType == GraphicsDeviceType.Direct3D12;
+
             s_PanelKey = PanelKey;
             s_NTCKey = NTCKey;
 
@@ -235,8 +240,8 @@ namespace NTC.Editor
             if (!s_Panel.activeSelf)
                 return;
 
-            s_GBuffer.text = s_GBufferSampler != null ? $"{GetGBufferAverage():F2}" : k_NotAvailable;
-            s_GPU.text = FormatMs(s_GpuFrameTimeRecorder);
+            s_GBuffer.text = s_GpuTimingsSupported && s_GBufferSampler != null ? $"{GetGBufferAverage():F2}" : k_NotAvailable;
+            s_GPU.text = s_GpuTimingsSupported ? FormatMs(s_GpuFrameTimeRecorder) : k_NotAvailable;
             s_CPU.text = FormatMs(s_CpuMainThreadTimeRecorder);
 
             double mainThreadNs = GetRecorderFrameAverage(s_MainThreadTimeRecorder);
