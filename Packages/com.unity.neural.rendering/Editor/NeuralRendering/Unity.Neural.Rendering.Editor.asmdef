@@ -1,0 +1,31 @@
+{
+    "name": "Unity.Neural.Rendering.Editor",
+    "rootNamespace": "UnityEditor.Experimental.Neural.Rendering",
+    "references": [
+        "GUID:fd7515aa0667edb43a4348b5b4f23f84",
+        "GUID:be0903cd8e1546f498710afdc59db5eb",
+        "GUID:c579267770062bf448e75eb160330b7f",
+        "GUID:15fc0a57446b3144c949da3e2b9737a9",
+        "GUID:3eae0364be2026648bf74846acb8a731",
+        "GUID:df380645f10b7bc4b97d4f5eb6303d95"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "NTC_URP_17_7_OR_NEWER"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "17.7.0",
+            "define": "NTC_URP_17_7_OR_NEWER"
+        }
+    ],
+    "noEngineReferences": false
+}

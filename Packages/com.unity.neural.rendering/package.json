@@ -1,0 +1,27 @@
+{
+  "name": "com.unity.neural.rendering",
+  "displayName": "Neural Rendering",
+  "version": "1.0.0-exp.1",
+  "unity": "6000.7",
+  "unityRelease": "0b8",
+  "description": "Train neural texture compression for your materials from inside the Unity Editor. Pick materials in the Neural Training window, train on your machine with the built-in local training server, and get a compact neural material: block-compressed latent textures decoded by a small network in a URP Shader Graph.",
+  "keywords": [
+    "ai",
+    "neural",
+    "texture compression",
+    "training",
+    "urp"
+  ],
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1",
+    "com.unity.render-pipelines.universal": "17.7.0",
+    "com.unity.shadergraph": "17.7.0",
+    "com.unity.modules.imageconversion": "1.0.0",
+    "com.unity.modules.imgui": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0",
+    "com.unity.modules.uielements": "1.0.0"
+  },
+  "relatedPackages": {
+    "com.unity.neural.rendering.tests": "1.0.0-exp.1"
+  }
+}

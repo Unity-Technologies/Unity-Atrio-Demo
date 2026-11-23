@@ -1,0 +1,25 @@
+{
+    "name": "Unity.Neural.Rendering",
+    "rootNamespace": "UnityEngine.Experimental.Neural.Rendering",
+    "references": [
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "NTC_URP_17_7_OR_NEWER"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "17.7.0",
+            "define": "NTC_URP_17_7_OR_NEWER"
+        }
+    ],
+    "noEngineReferences": false
+}
